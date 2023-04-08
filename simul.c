@@ -7,8 +7,8 @@
 
 
 // Length of the domain
-#define Lx 30
-#define Ly 30
+#define Lx 900
+#define Ly 900
 
 // Number of points
 #define nx (Lx + 1)

@@ -5,8 +5,9 @@
 #include <string.h>
 #include <omp.h>
 
-// Max number of threads
-#define MAX_THREADS 96
+// Max iters
+#define MAX_ITERS 500
+#define CHECKPOINT 100
 
 // Length of the domain
 #define Lx 30
@@ -59,84 +60,165 @@ void print_points(const float* points)
 	}
 }
 
-
-int main(void)
+void checkpoint(FILE* f, const float* points, size_t process_rank)
 {
-	float buffer[nx * ny * 2] = {0.0f};
-	float *points = buffer, *new_points = buffer + (nx * ny);
+	static size_t c = 0;
 	
-	const float dx_squared = powf(dx, 2);
-	const float dy_squared = powf(dy, 2);
+	printf("[%lu] Checkpoint %lu\n", process_rank, ++c);
+	const float* temp = points - (CHECKPOINT-1) * nx * ny;
+
+	for (size_t i = 0; i < CHECKPOINT; ++i)
+	{
+		print_graph(f, temp + i * ny * nx);
+		fprintf(f, "\n\n");
+	}
+}
+
+
+int main(int argc, char** argv)
+{
+	// Allocate buffer
+	float *buffer = (float*) calloc(nx * ny * (CHECKPOINT+1), sizeof(float));
 	
-	size_t x, y;
-	
-	// Open dat file for the plot
-	FILE* f;
-	if ((f = fopen(FILENAME, "w")) == NULL)
+	if (buffer == NULL)
 	{
 		perror(strerror(errno));
 		return -1;
 	}
 	
-	/*
-	// Fill points with 10*(1/(x*y)^3) as an initial state
-	size_t y;
-	for (y=1; y<ny; ++y)
+	// Declare pointers
+	float *points, *new_points;
+	
+	// Initialize spatial differentials
+	const float dx_squared = powf(dx, 2);
+	const float dy_squared = powf(dy, 2);
+	
+	size_t x, y;
+	
+	// Open file to store the results in
+	FILE* f;
+	if ((f = fopen(FILENAME, "w")) == NULL)
 	{
-		size_t x;
-		for (x=1; x<nx; ++x)
-		{
-			points[y*(nx) + x] = (81.0f * powf(((float)x) * ((float)y), -2)) + 19.0f;
-			
-			if (errno)
-			{
-				perror(strerror(errno));
-				return -1;
-			}
-			
-			points[y * nx] = points[y * nx + 1];
-		}
+		perror(strerror(errno));
+		free(buffer);
+		return -1;
 	}
 	
-	size_t x;
-	for (x=0; x<nx; ++x)
-	{
-		points[x] = points[nx + x];
-	}
-	*/
+	printf("Cores: %d\n", omp_get_max_threads());
+	
 	
 	// Fill for an initial state with center point at 100 °C 
 	for (y=0; y<ny; ++y)
 	{
 		for (x=0; x<nx; ++x)
 		{
-			points[y * nx + x] = (x == (nx / 2) && y == (ny / 2)) ? 100.0f : 19.0f;
+			buffer[y * nx + x] = (x == (nx / 2) && y == (ny / 2)) ? 100.0f : 19.0f;
 		}
 	}
 	
-	// print end-line to signal end of frame
-	print_graph(f, points);
-	fprintf(f, "\n\n");
 	
+	/*
 	// print initial points
 	printf("Initial State: \n");
 	print_points(points);
+	*/
+	
+	
+	points = buffer;
+	new_points = points + ny * nx;
 
-	// set omp maximum number of threads
-	omp_set_num_threads(MAX_THREADS);
+	// checkpoint counter
+	size_t c = 0;
+	
+	// timestep variable
+	size_t t;
 
-
-	float t;
-	for (t=T_0; t<T_f; t += dt)
+	for (t = 1; t<MAX_ITERS; ++t)
 	{
-
-#pragma omp parallel for
-		for (y=1; y<ny-1; ++y)
+		
+		// Checkpointing procedure
+		if (t % CHECKPOINT == 0)
 		{
-#pragma omp parallel for
-			for (x=1; x<nx-1; ++x)
+			checkpoint(f, new_points, 0);
+		}
+				
+		// Adjust pointers to next frame
+		points = buffer + ((t-1) % CHECKPOINT) * ny * nx;
+		new_points = buffer + (t % CHECKPOINT) * ny * nx;
+		
+		
+		// Grid points computation
+		#pragma omp parallel for
+		for (size_t i=0; i<(ny*nx); ++i)
+		{
+			//float stencil[4] =  {0};
+		
+			y = i / nx;
+			x = i % nx;
+			
+			
+			// Enumerating boundary cases
+			int jmp = 0;
+			jmp += (x == 0 && y == 0);
+			jmp += (x == 0 && y == (ny-1)) << 1;
+			jmp += (x == (nx-1) && y == 0) << 2;
+			jmp += (x == (nx-1) && y == (ny-1)) << 3;
+			
+			jmp += (x == 0 && y != 0 && y != (ny-1)) << 4;
+			jmp += (y == 0 && x != 0 && x != (nx-1)) << 5;
+			jmp += (x == (nx-1) && y != 0 && y != (ny-1)) << 6;
+			jmp += (y == (ny-1) && x != 0 && x != (nx-1)) << 7;
+			
+			jmp += (x != 0 && y != (ny-1) && x != (nx-1) && y != 0) << 8;
+			
+			/* If on a boundary, compute the average of the neighboring cells.
+			   If on a internal cell, compute the FTCS (Forward in time, Central in space) */
+			     
+			switch(jmp)
 			{
-
+			// 1
+			case 1:
+				new_points[0] = (points[1] / 2.0f + points[nx] / 2.0f);
+				break;
+			// 2
+			case 2:
+				new_points[y * nx] = (points[y * nx + 1] / 2.0f + points[(y-1) * nx] / 2.0f);
+				break;
+			// 3
+			case 4:
+				new_points[x] = (points[x-1] / 2.0f + points[nx + x] / 2.0f);
+				break;
+			// 4
+			case 8:
+				new_points[y * nx + x] = (points[y * nx + x-1] / 2.0f + points[(y-1) * nx + x] / 2.0f);
+				break;
+			// 5
+			case 16:
+				new_points[y * nx] = points[y * nx + 1] / 3.0f + points[(y-1) * nx] / 3.0f
+					+ points[(y+1) * nx] / 3.0f;
+				break;
+			// 6
+			case 32:
+				new_points[x] = points[x-1] / 3.0f + points[nx + x] / 3.0f
+					+ points[x+1] / 3.0f;
+				break;
+			
+			// 7
+			case 64:
+				new_points[y * nx + x] = points[(y-1) * nx + x] / 3.0f + points[y * nx + x-1] / 3.0f
+					+ points[(y+1) * nx + x] / 3.0f;
+				break;
+			
+			// 8
+			case 128:
+				new_points[y * nx + x] = points[y * nx + x-1] / 3.0f + points[(y-1) * nx + x] / 3.0f
+					+ points[y * nx + x+1] / 3.0f;
+				break;
+				
+			// 9	
+			case 256:
+				
+				//get_neighboring_temperatures(stencil);
 				new_points[y * nx + x] = points[y * nx + x] + dt * alpha * (
 				
 					(points[y * nx + x - 1] - (2.0f * points[y * nx + x]) + points[y * nx + x + 1])
@@ -145,42 +227,31 @@ int main(void)
 					(points[(y-1) * nx + x] - (2.0f * points[y * nx + x]) + points[(y+1) * nx + x])
 							* (1.0f/dy_squared)
 				);
-				
-				
+			default:
+				break;
 			}
 			
-			// dealing with x boundary
-			new_points[y * nx] = new_points[y * nx + 1];
-			new_points[y * nx + (nx - 1)] = new_points[y * nx + (nx - 2)];
-			
+			// Maintain midpoint to 100°C to simulate a laser application heat source
+			if (x == (nx/2) && y == (ny / 2))
+			{
+				new_points[y * nx + x] = points[y * nx + x];
+			}
+		
 		}
 		
-#pragma omp barrier
-
-		// dealing with y boundary
-#pragma omp parallel for
-		for (x=0; x<nx; ++x)
-		{
-			new_points[x] = new_points[nx + x];
-			new_points[(ny-1) * nx + x] = new_points[(ny-2) * nx + x];
-			
-		}
-		
-		// print end-line to signal end of frame
-		print_graph(f, new_points);
-		fprintf(f, "\n\n");
-		
-		float* temp = points;
-		points = new_points;
-		new_points = points;
 	}
 	
+	// Last checkpoint
+	checkpoint(f, new_points, 0);
 	
 	fclose(f);
+	free(buffer);
 	
+	/*
 	// print ending points
 	printf("Ending State: \n");
 	print_points(points);
+	*/
 	
 	return 0;
 }
