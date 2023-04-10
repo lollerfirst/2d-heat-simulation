@@ -26,7 +26,11 @@
 #define alpha 0.5
 
 // Graph filenames
-#define FILENAME "heat_diffusion.dat"
+#define FILENAME "heat_diffusion_%d.dat"
+
+#ifndef MAX_PATH
+#define MAX_PATH 260
+#endif
 
 static size_t nx,ny;
 static int neighbors[4];
@@ -221,6 +225,22 @@ int get_remote_value(size_t x, float* out)
 	return 0;
 }
 
+float fdivide2(const float f)
+{
+	int exp;
+	int mantix = std::frexp(f, &exp);
+	
+	return std::ldexp(mantix, --exp);
+}
+
+float fmul2(const float f)
+{
+	int exp;
+	int mantix = std::frexp(f, &exp);
+	
+	return std::ldexp(mantix, ++exp);
+}
+
 
 int get_neighboring_values(size_t x, size_t y, const float *points, float *out_values)
 {
@@ -239,25 +259,31 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			{
 				return -1;
 			}
-		
-			if (neighbors[WEST] != -1)
-			{
-				err = get_remote_value<WEST>(y, &out_values[WEST]);
-				if (err)
-				{
-					return -1;
-				}
-				
-				return 1 << 8;
-			}
 			
-			return 1 << 4;
+		}
+		else
+		{
+			out_values[NORTH] = fdivide2(out_values[EAST] + out_values[SOUTH]);
 		}
 		
-		return 1;
+		if (neighbors[WEST] != -1)
+		{
+			err = get_remote_value<WEST>(y, &out_values[WEST]);
+			if (err)
+			{
+				return -1;
+			}
+			
+		}
+		else
+		{
+			out_values[WEST] = fdivide2(out_values[EAST] + out_values[SOUTH]);
+		}
+		
+		return 0;
 	}
 	
-	if  (x == 0 && y == (ny-1))
+	if (x == 0 && y == (ny-1))
 	{
 		out_values[EAST] = points[y*nx + x + 1];
 		out_values[NORTH] = points[(y-1)*nx + x];
@@ -270,36 +296,203 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			{
 				return -1;
 			}
-		
-			if (neighbors[WEST] != -1)
+		}
+		else
+		{
+			out_values[SOUTH] = fdivide2(out_values[EAST] + out_values[NORTH]);
+		}
+	
+		if (neighbors[WEST] != -1)
+		{
+			err = get_remote_value<WEST>(y, &out_values[WEST]);
+			if (err)
 			{
-				err = get_remote_value<WEST>(y, &out_values[WEST]);
-				if (err)
-				{
-					return -1;
-				}
-				
-				return 1 << 8;
+				return -1;
 			}
 			
-			return 1 << 4;
+		}
+		else
+		{
+			out_values[WEST] = fdivide2(out_values[EAST] + out_values[NORTH]);
 		}
 		
-		return 1 << 1;
+		return 0;
 	}
 	
 	if (x == (nx-1) && y == 0)
 	{
+		out_values[WEST] = points[y*nx + x - 1];
+		out_values[SOUTH] = points[(y+1)*nx + x];
 		
+		if (neighbors[NORTH] != -1)
+		{
+			err = get_remote_value<NORTH>(x, &out_values[NORTH]);
+			
+			if (err)
+			{
+				return -1;
+			}
+			
+		}
+		else
+		{
+			out_values[NORTH] = fdivide2(out_values[WEST] + out_values[SOUTH]);
+		}
+		
+		if (neighbors[EAST] != -1)
+		{
+			err = get_remote_value<EAST>(y, &out_values[EAST]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[EAST] = fdivide2(out_values[WEST] + out_values[SOUTH]);
+		}
+	
+		return 0;
 	}
-	jmp += (x == (nx-1) && y == (ny-1)) << 3;
 	
-	jmp += (x == 0 && y != 0 && y != (ny-1)) << 4;
-	jmp += (y == 0 && x != 0 && x != (nx-1)) << 5;
-	jmp += (x == (nx-1) && y != 0 && y != (ny-1)) << 6;
-	jmp += (y == (ny-1) && x != 0 && x != (nx-1)) << 7;
+	if (x == (nx-1) && y == (ny-1))
+	{
+		out_values[WEST] = points[y*nx + x - 1];
+		out_values[NORTH] = points[(y+1)*nx + x];
+		
+		if (neighbors[SOUTH] != -1)
+		{
+			err = get_remote_value<SOUTH>(x, &out_values[SOUTH]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[SOUTH] = fdivide2(out_values[WEST] + out_values[NORTH]);
+		}
+		
+		if (neighbors[EAST] != -1)
+		{
+			err = get_remote_value<EAST>(y, &out_values[EAST]);
+			
+			if (err)
+			{
+				return -1;
+			}	
+		}
+		else
+		{
+			out_values[EAST] = fdivide2(out_values[WEST] + out_values[NORTH]);
+		}
+		
+		return 0;
+	}
 	
-	jmp += (x != 0 && y != (ny-1) && x != (nx-1) && y != 0) << 8;
+	
+	if (x == 0 && y != 0 && y != (ny-1))
+	{
+		out_values[NORTH] = points[(y-1)*nx + x];
+		out_values[SOUTH] = points[(y+1)*nx + x];
+		out_values[EAST] = points[y*nx + x + 1];
+		
+		if (neighbors[WEST] != -1)
+		{
+			err = get_remote_value<WEST>(y, &out_values[WEST]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[WEST] = (out_values[NORTH] + out_values[SOUTH] + out_values[EAST]) / 3.0f;
+		}
+		
+		return 0;
+	}
+	
+	
+	if (y == 0 && x != 0 && x != (nx-1))
+	{
+		out_values[WEST] = points[y*nx + x - 1];
+		out_values[SOUTH] = points[(y+1)*nx + x];
+		out_values[EAST] = points[y*nx + x + 1];
+		
+		if (neighbors[NORTH] != -1)
+		{
+			err = get_remote_value<NORTH>(y, &out_values[NORTH]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[NORTH] = (out_values[WEST] + out_values[SOUTH] + out_values[EAST]) / 3.0f;
+		}
+		
+		return 0;
+	}
+	
+	if (x == (nx-1) && y != 0 && y != (ny-1))
+	{
+		out_values[WEST] = points[y*nx + x - 1];
+		out_values[SOUTH] = points[(y+1)*nx + x];
+		out_values[NORTH] = points[(y-1)*nx + x];
+		
+		if (neighbors[EAST] != -1)
+		{
+			err = get_remote_value<EAST>(y, &out_values[EAST]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[EAST] = (out_values[WEST] + out_values[SOUTH] + out_values[NORTH]) / 3.0f;
+		}
+		
+		return 0;
+	}
+	
+	
+	if (y == (ny-1) && x != 0 && x != (nx-1))
+	{
+		out_values[WEST] = points[y*nx + x - 1];
+		out_values[EAST] = points[y*nx + x + 1];
+		out_values[NORTH] = points[(y-1)*nx + x];
+		
+		if (neighbors[SOUTH] != -1)
+		{
+			err = get_remote_value<SOUTH>(y, &out_values[SOUTH]);
+			
+			if (err)
+			{
+				return -1;
+			}
+		}
+		else
+		{
+			out_values[SOUTH] = (out_values[WEST] + out_values[EAST] + out_values[NORTH]) / 3.0f;
+		}
+		
+		return 0;
+	}
+	
+	out_values[NORTH] = points[(y-1)*nx + x];
+	out_values[WEST] = points[y*nx + x - 1];
+	out_values[EAST] = points[y*nx + x + 1];
+	out_values[SOUTH] = points[(y+1)*nx + x];
+	
+	return 0;
 }
 
 
@@ -458,6 +651,10 @@ int main(int argc, char** argv)
 	// Gridpoint variables
 	size_t x, y;
 	
+	// Get own filename
+	char filename[MAX_PATH];
+	sprintf(filename, FILENAME, rank);
+	
 	// Open file to store the results in
 	FILE* f;
 	if ((f = fopen(FILENAME, "w")) == nullptr)
@@ -472,7 +669,6 @@ int main(int argc, char** argv)
 	printf("Cores: %d\n", omp_get_max_threads());
 	
 	
-
 	// NORTH
 	neighbors[NORTH] = (rank >= sqrt_n_nodes_x) ? (rank - sqrt_n_nodes_x - 1) : -1;
 	
@@ -511,8 +707,8 @@ int main(int argc, char** argv)
 		}
 				
 		// Adjust pointers to next frame
-		points = buffer + ((t-1) % CHECKPOINT) * ny * nx;
-		new_points = buffer + (t % CHECKPOINT) * ny * nx;
+		points = recv_buffer + ((t-1) % CHECKPOINT) * ny * nx;
+		new_points = recv_buffer + (t % CHECKPOINT) * ny * nx;
 		
 		
 		// Grid points computation
@@ -523,11 +719,11 @@ int main(int argc, char** argv)
 			y = i / nx;
 			x = i % nx;
 			
-			float values[4];
-			int jmp = 0;
-			jmp = get_neighboring_values(x, y, points, values);
+			float stencil[4];
 			
-			if (jmp == -1)
+			int err = get_neighboring_values(x, y, points, stencil);
+			
+			if (err)
 			{
 				(void) (rank == 0) ? free(buffer) : 0;
 				free(recv_buffer);
@@ -535,71 +731,15 @@ int main(int argc, char** argv)
 				MPI_Finalize();
 				return -1;
 			}
-			
-			// Enumerating boundary cases
-			
-			
-			/* If on a boundary, compute the average of the neighboring cells.
-			   If on a internal cell, compute the FTCS (Forward in time, Central in space) */
-			     
-			switch(jmp)
-			{
-			// 0
-			case 1:
-				new_points[y*nx + x] = (values[EAST] / 2.0f + values[SOUTH] / 2.0f);
-				break;
-			// 1
-			case 2:
-				new_points[y*nx + x] = (values[EAST] / 2.0f + values[NORTH] / 2.0f);
-				break;
-			// 2
-			case 4:
-				new_points[y*nx + x] = (values[WEST] / 2.0f + values[SOUTH] / 2.0f);
-				break;
-			// 3
-			case 8:
-				new_points[y*nx + x] = (values[WEST] / 2.0f + values[NORTH] / 2.0f);
-				break;
-			// 4
-			case 16:
-				new_points[y*nx + x] = values[EAST] / 3.0f + values[NORTH] / 3.0f
-					+ values[SOUTH] / 3.0f;
-				break;
-			// 5
-			case 32:
-				new_points[y*nx + x] = values[WEST] / 3.0f + values[SOUTH] / 3.0f
-					+ values[EAST] / 3.0f;
-				break;
-			
-			// 6
-			case 64:
-				new_points[y*nx + x] = values[NORTH] / 3.0f + values[WEST] / 3.0f
-					+ values[SOUTH] / 3.0f;
-				break;
-			
-			// 7
-			case 128:
-				new_points[y*nx + x] = values[WEST] / 3.0f + values[NORTH] / 3.0f
-					+ values[EAST] / 3.0f;
-				break;
 				
-			// 8	
-			case 256:
-				
-				//get_neighboring_temperatures(stencil);
-				new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
-				
-					(values[WEST] - (2.0f * points[y*nx + x]) + values[EAST])
-							* (1.0f/dx_squared)
-					+
-					(values[NORTH] - (2.0f * points[y*nx + x]) + values[SOUTH])
-							* (1.0f/dy_squared)
-				);
-				
-			default:
-				break;
-			}
+			new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
 			
+				(stencil[WEST] - fmul2(points[y*nx + x]) + stencil[EAST])
+						* (1.0f/dx_squared)
+				+
+				(stencil[NORTH] - fmul2(points[y*nx + x]) + stencil[SOUTH])
+						* (1.0f/dy_squared)
+			);
 		
 		}
 		
