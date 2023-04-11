@@ -657,7 +657,7 @@ int main(int argc, char** argv)
 	
 	// Open file to store the results in
 	FILE* f;
-	if ((f = fopen(FILENAME, "w")) == nullptr)
+	if ((f = fopen(filename, "w")) == nullptr)
 	{
 		perror(strerror(errno));
 		free(buffer);
