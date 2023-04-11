@@ -47,6 +47,7 @@ enum directions
 enum tags
 {
 	FRAME_INIT,
+	FRAME_END,
 	REQ_VALUE,
 	SUPPL_VALUE
 };
@@ -96,7 +97,7 @@ void checkpoint(FILE* f, const float* points, size_t process_rank)
 template <size_t DIRECTION>
 int get_remote_value(size_t x, float* out)
 {
-	size_t arr[3] = {-1, nx, ny};
+	size_t arr[3] = {0, nx, ny};
 	int err;
 	
 	
@@ -109,25 +110,15 @@ int get_remote_value(size_t x, float* out)
 		{
 			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[NORTH], REQ_VALUE, MPI_COMM_WORLD);
 			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				//MPI_Finalize();
-				return err;
-			}
-			
 			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[NORTH], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				//MPI_Finalize();
-				return err;
-			}
-			
-			
+		
+		}
+		
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			//MPI_Finalize();
 		}
 
 	}
@@ -141,23 +132,14 @@ int get_remote_value(size_t x, float* out)
 		{
 			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[WEST], REQ_VALUE, MPI_COMM_WORLD);
 			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
-			
 			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[WEST], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
+		}
+		
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			fprintf(stderr, "MPI ERROR: %s\n", estring);
+
 		}
 	
 	}
@@ -172,23 +154,13 @@ int get_remote_value(size_t x, float* out)
 		{
 			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[SOUTH], REQ_VALUE, MPI_COMM_WORLD);
 			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
-			
 			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[SOUTH], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
+		}
+		
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			fprintf(stderr, "MPI ERROR: %s\n", estring);
 		}
 	}
 	
@@ -202,27 +174,18 @@ int get_remote_value(size_t x, float* out)
 		{
 			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[EAST], REQ_VALUE, MPI_COMM_WORLD);
 			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
-			
 			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[EAST], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-			
-			if (err)
-			{
-				MPI_Error_string(err, estring, nullptr);
-				fprintf(stderr, "MPI ERROR: %s\n", estring);
-				
-				return err;
-			}
+		}
+		
+		
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			fprintf(stderr, "MPI ERROR: %s\n", estring);
 		}
 	}
 	
-	return 0;
+	return err;
 }
 
 float fdivide2(const float f)
@@ -524,7 +487,7 @@ int main(int argc, char** argv)
 	
 	// Get the rank of this process
 	int rank;
-	err = MPI_Comm_rank(MPI_COMM_WORLD, &rank)
+	err = MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 	
 	if (err)
 	{
@@ -561,9 +524,9 @@ int main(int argc, char** argv)
 		}
 		
 		// Fill for an initial state with center point at 100 °C 
-		for (y=0; y<full_ny; ++y)
+		for (size_t y=0; y<full_ny; ++y)
 		{
-			for (x=0; x<full_nx; ++x)
+			for (size_t x=0; x<full_nx; ++x)
 			{
 				buffer[y * full_nx + x] = (x == (full_nx / 2) && y == (full_ny / 2)) ? 100.0f : 19.0f;
 			}
@@ -605,7 +568,7 @@ int main(int argc, char** argv)
 				to = (i/ny)*sqrt_n_nodes_x + j;
 				count = nx + ((j == sqrt_n_nodes_x-1) ? rem_nx : 0);
 				
-				err = MPI_Send(starting_ptr, count, MPI_FLOAT, to, MSG_INIT, MPI_COMM_WORLD);
+				err = MPI_Send(starting_ptr, count, MPI_FLOAT, to, FRAME_INIT, MPI_COMM_WORLD);
 				
 				if (err)
 				{
@@ -627,7 +590,7 @@ int main(int argc, char** argv)
 	
 	size_t recv_size = nx * ny;
 	
-	err = MPI_Recv(recv_buffer, recv_size, MPI_FLOAT, 0, MSG_INIT, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+	err = MPI_Recv(recv_buffer, recv_size, MPI_FLOAT, 0, FRAME_INIT, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 	
 	if (err)
 	{
@@ -645,8 +608,8 @@ int main(int argc, char** argv)
 	float *points, *new_points;
 	
 	// Initialize spatial differentials
-	const float dx_squared = std::powf(dx, 2);
-	const float dy_squared = std::powf(dy, 2);
+	const float dx_squared = std::pow(dx, 2);
+	const float dy_squared = std::pow(dy, 2);
 	
 	// Gridpoint variables
 	size_t x, y;
@@ -703,16 +666,17 @@ int main(int argc, char** argv)
 		// Checkpointing procedure
 		if (t % CHECKPOINT == 0)
 		{
-			checkpoint(f, new_points, 0);
+			checkpoint(f, new_points, rank);
 		}
 				
 		// Adjust pointers to next frame
 		points = recv_buffer + ((t-1) % CHECKPOINT) * ny * nx;
 		new_points = recv_buffer + (t % CHECKPOINT) * ny * nx;
 		
+		int err = 0;
 		
 		// Grid points computation
-		#pragma omp parallel for
+		#pragma omp parallel for shared(err)
 		for (size_t i=0; i<(ny*nx); ++i)
 		{
 					
@@ -721,16 +685,7 @@ int main(int argc, char** argv)
 			
 			float stencil[4];
 			
-			int err = get_neighboring_values(x, y, points, stencil);
-			
-			if (err)
-			{
-				(void) (rank == 0) ? free(buffer) : 0;
-				free(recv_buffer);
-				fprintf(stderr, "[!] Comm error at line %d\n", __LINE__);
-				MPI_Finalize();
-				return -1;
-			}
+			err = get_neighboring_values(x, y, points, stencil);
 				
 			new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
 			
@@ -743,22 +698,72 @@ int main(int argc, char** argv)
 		
 		}
 		
+		if (err)
+		{
+			(rank == 0) ? free(buffer) : (void)0;
+			free(recv_buffer);
+			return -1;
+		}
+		
 		MPI_Barrier(MPI_COMM_WORLD);
 		
 	}
 	
 	// Last checkpoint
-	checkpoint(f, new_points, 0);
-	
+	checkpoint(f, new_points, rank);
 	fclose(f);
+	
+	err = MPI_Send(recv_buffer, recv_size, MPI_FLOAT, 0, FRAME_END, MPI_COMM_WORLD);
+	
+	if (err)
+	{
+		MPI_Error_string(err, estring, nullptr);
+		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		MPI_Abort(MPI_COMM_WORLD, err);
+		MPI_Finalize();
+		free(buffer);
+		free(recv_buffer);
+		return err;
+	}
+	
+	if (rank == 0)
+	{
+		for (size_t i=0; i<full_ny; ++i)
+		{
+			float *starting_ptr;
+			int from;
+			size_t count;
+			
+			for (size_t j=0; j<sqrt_n_nodes_x; ++j)
+			{
+				starting_ptr = buffer + i*full_nx + j*nx;
+				from = (i/ny) * sqrt_n_nodes_x + j;
+				count = nx + ((j == sqrt_n_nodes_x-1) ? rem_nx : 0);
+				
+				err = MPI_Recv(starting_ptr, count, MPI_FLOAT, from, FRAME_END, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+				
+				if (err)
+				{
+					MPI_Error_string(err, estring, nullptr);
+					fprintf(stderr, "MPI ERROR: %s\n", estring);
+					MPI_Abort(MPI_COMM_WORLD, err);
+					MPI_Finalize();
+					free(buffer);
+					free(recv_buffer);
+					return err;
+				}
+			}
+		}
+	}
+		
 	free(buffer);
 	free(recv_buffer);
 	
-	/*
+	
 	// print ending points
 	printf("Ending State: \n");
 	print_points(points);
-	*/
+	
 	
 	MPI_Finalize();
 	return 0;
