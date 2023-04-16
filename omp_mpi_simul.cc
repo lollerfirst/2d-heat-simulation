@@ -576,12 +576,13 @@ int main(int argc, char** argv)
 			return err;
 		}
 		
-		// Fill for an initial state with center point at 100 °C 
+		// Fill for an initial state with center point at 100 °C
+		float *tmp = buffer.get();
 		for (size_t y=0; y<full_ny; ++y)
 		{
 			for (size_t x=0; x<full_nx; ++x)
 			{
-				buffer.get()[y * full_nx + x] = (x == (full_nx / 2) && y == (full_ny / 2)) ? 100.0f : 19.0f;
+				tmp[y * full_nx + x] = (x == (full_nx / 2) && y == (full_ny / 2)) ? 100.0f : 19.0f;
 			}
 		}
 	
