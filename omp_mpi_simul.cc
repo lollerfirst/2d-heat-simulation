@@ -1,3 +1,5 @@
+// mpic++ -std=c++17 -fno-exceptions -fopenmp -fsanitize=address -fsanitize=leak -o d.out omp_mpi_simul.cc
+
 #include <stdio.h>
 #include <cmath>
 #include <errno.h>
@@ -28,9 +30,13 @@
 // Thermal diffusivity
 #define alpha 0.5
 
-// Graph filenames
+// Graph filename format
 #define FILENAME "heat_diffusion_%d.dat"
 
+// Error log name format
+#define ERROR_LOG_FORMAT "error_log_%d.txt"
+
+// Maximum size of a path on the system
 #ifndef MAX_PATH
 #define MAX_PATH 260
 #endif
@@ -39,6 +45,7 @@ static size_t nx,ny;
 static int neighbors[4];
 static char estring[MPI_MAX_ERROR_STRING] = {0};
 static float *current_frame;
+static std::ofstream errstream;
 
 enum directions
 {
@@ -56,10 +63,12 @@ enum tags
 	SUPPL_VALUE
 };
 
-void respond_routine(bool *terminate)
+int respond_routine(bool *terminate)
 {
 	MPI_Request req[4];
 	size_t request_arr[2*4];
+
+	int err;
 
 	for (size_t i=0; i<4; ++i)
 	{
@@ -68,7 +77,15 @@ void respond_routine(bool *terminate)
 			continue;
 		}
 
-		MPI_Irecv(request_arr+i*2, 2, MPI_UNSIGNED_LONG, neighbors[i], REQ_VALUE, MPI_COMM_WORLD, &req[i]);
+		err = MPI_Irecv(request_arr+i*2, 2, MPI_UNSIGNED_LONG, neighbors[i], REQ_VALUE, MPI_COMM_WORLD, &req[i]);
+
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << "\n";
+			return -1;
+		}
 	}
 
 	while (!(*terminate))
@@ -98,11 +115,28 @@ void respond_routine(bool *terminate)
 				// Respond with requested values
 				MPI_Send(&val, 1, MPI_FLOAT, neighbors[i], SUPPL_VALUE, MPI_COMM_WORLD);
 
+				if (err)
+				{
+					MPI_Error_string(err, estring, nullptr);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << "\n";
+					return -1;
+				}
+
 				// Listen for further requests
 				MPI_Irecv(request_arr+i*2, 2, MPI_UNSIGNED_LONG, neighbors[i], REQ_VALUE, MPI_COMM_WORLD, &req[i]);
+				if (err)
+				{
+					MPI_Error_string(err, estring, nullptr);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << "\n";
+					return -1;
+				}
 			}
 		}
 	}
+
+	return 0;
 }
 
 void print_graph(std::ofstream& f, const float* points)
@@ -118,7 +152,7 @@ void print_graph(std::ofstream& f, const float* points)
 	}
 }
 
-void print_points(const float* points)
+void print_points(std::ofstream& f, const float* points)
 {
 	size_t y;
 	size_t x;
@@ -127,9 +161,9 @@ void print_points(const float* points)
 	{
 		for (x=0; x<nx; ++x)
 		{
-			printf("%.4f ", points[y * nx + x]);
+			f << points[y * nx + x] << " ";
 		}
-		printf("\n");
+		f << "\n";
 	}
 }
 
@@ -137,8 +171,8 @@ void checkpoint(std::ofstream& f, const float* points, size_t process_rank)
 {
 	static size_t c = 0;
 	
-	printf("[%lu] Checkpoint %lu\n", process_rank, ++c);
-	const float* temp = points - (CHECKPOINT-1) * nx * ny;
+	errstream << "[" << process_rank << "] Checkpoint " << ++c << "\n";
+	const float *temp = points - (CHECKPOINT-1) * nx * ny;
 
 	for (size_t i = 0; i < CHECKPOINT; ++i)
 	{
@@ -170,7 +204,8 @@ int get_remote_value(size_t x, float* out)
 		if (err)
 		{
 			MPI_Error_string(err, estring, nullptr);
-			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << "\n";
 			//MPI_Finalize();
 		}
 
@@ -191,7 +226,8 @@ int get_remote_value(size_t x, float* out)
 		if (err)
 		{
 			MPI_Error_string(err, estring, nullptr);
-			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << "\n";
 
 		}
 	
@@ -213,7 +249,8 @@ int get_remote_value(size_t x, float* out)
 		if (err)
 		{
 			MPI_Error_string(err, estring, nullptr);
-			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << "\n";
 		}
 	}
 	
@@ -234,7 +271,8 @@ int get_remote_value(size_t x, float* out)
 		if (err)
 		{
 			MPI_Error_string(err, estring, nullptr);
-			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << "\n";
 		}
 	}
 	
@@ -273,6 +311,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 			
@@ -287,6 +326,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			err = get_remote_value<WEST>(y, &out_values[WEST]);
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 			
@@ -310,6 +350,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -323,6 +364,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			err = get_remote_value<WEST>(y, &out_values[WEST]);
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 			
@@ -346,6 +388,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 			
@@ -361,6 +404,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -383,6 +427,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -397,6 +442,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}	
 		}
@@ -421,6 +467,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -445,6 +492,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -468,6 +516,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -492,6 +541,7 @@ int get_neighboring_values(size_t x, size_t y, const float *points, float *out_v
 			
 			if (err)
 			{
+				errstream << "Error at line " << __LINE__ << "\n";
 				return -1;
 			}
 		}
@@ -522,7 +572,8 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		std::cerr << "MPI ERROR: " << estring << "\n";
+		MPI_Finalize();
 		return err;
 	}
 	
@@ -533,7 +584,7 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		std::cerr << "MPI ERROR: " << estring << "\n";
 		MPI_Finalize();
 		return err;
 	}
@@ -545,32 +596,46 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		std::cerr << "MPI ERROR: " << estring << "\n";
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
 	}
+
+	// Initialize error log stream
+	char errstream_filepath[MAX_PATH];
+	sprintf(errstream_filepath, ERROR_LOG_FORMAT, rank);
+ 	errstream.open(errstream_filepath, std::ofstream::out);
 	
+	if (!errstream.is_open())
+	{
+		std::cerr << "Could not open error log file\n";
+		MPI_Abort(MPI_COMM_WORLD, err);
+		MPI_Finalize();
+		return -1;
+	}
+
 	// Calculate size of chunk
 	size_t sqrt_n_nodes_x = (size_t) std::floor(std::sqrt((float)n_nodes));
 	size_t sqrt_n_nodes_y = (size_t) std::ceil(std::sqrt((float)n_nodes));
 	size_t full_ny, full_nx;
+
+	errstream << "sqrt_n_nodes_x : " << sqrt_n_nodes_x << "\tsqrt_n_nodes_y : " << sqrt_n_nodes_y << "\n";
 	
 	// Allocate memory and scatter domain from master to slaves
-	std::unique_ptr<float> buffer;
-	std::unique_ptr<float> recv_buffer;
+	std::unique_ptr<float[]> buffer;
+	std::unique_ptr<float[]> recv_buffer;
 	
 	if (rank == 0)
 	{
 		full_ny = Ly + 1;
 		full_nx = Lx + 1;
 		
-		buffer = std::make_unique<float>(full_ny * full_nx * (CHECKPOINT+1));
+		buffer = std::make_unique<float[]>(full_ny * full_nx * (CHECKPOINT+1));
 		
 		if (buffer == nullptr)
 		{
-			MPI_Error_string(err, estring, nullptr);
-			fprintf(stderr, "MPI ERROR: %s\n", estring);
+			errstream << "Error at line " << __LINE__ << "\n";
 			MPI_Abort(MPI_COMM_WORLD, err);
 			MPI_Finalize();
 			return err;
@@ -595,12 +660,12 @@ int main(int argc, char** argv)
 	size_t rem_ny = (Ly + 1) % sqrt_n_nodes_y;
 	
 	
-	recv_buffer = std::make_unique<float>((nx+rem_nx) * (ny+rem_ny) * (CHECKPOINT+1));
+	recv_buffer = std::make_unique<float[]>((nx+rem_nx) * (ny+rem_ny) * (CHECKPOINT+1));
 	
 	if (recv_buffer == nullptr)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		errstream << "Error at line " << __LINE__ << "\n";
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
@@ -626,7 +691,8 @@ int main(int argc, char** argv)
 				if (err)
 				{
 					MPI_Error_string(err, estring, nullptr);
-					fprintf(stderr, "MPI ERROR: %s\n", estring);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << "\n";
 					MPI_Abort(MPI_COMM_WORLD, err);
 					MPI_Finalize();
 					return err;
@@ -638,6 +704,8 @@ int main(int argc, char** argv)
 	// Receive initial frame from master node
 	nx += ((rank+1) % sqrt_n_nodes_x == 0) ? rem_nx : 0;
 	ny += (rank+1 - (sqrt_n_nodes_y-1) * sqrt_n_nodes_x >= 0) ? rem_ny : 0;
+
+	errstream << "nx : " << nx << "ny : " << ny << "\n";
 	
 	size_t recv_size = nx * ny;
 	
@@ -646,7 +714,8 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		errstream << "Error at line " << __LINE__ << "\n";
+		errstream << "MPI ERROR: " << estring << "\n";
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
@@ -669,12 +738,13 @@ int main(int argc, char** argv)
 
 	if (!f.is_open())
 	{
-		printf("Error at line %d", __LINE__);
+		errstream << "Error at line " << __LINE__ << "\n";
+		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return -1;
 	}
 	
-	printf("Cores: %d\n", omp_get_max_threads());
+	errstream << "Cores: " << omp_get_max_threads() << "\n";
 	
 	
 	// NORTH
@@ -695,8 +765,11 @@ int main(int argc, char** argv)
 	float *new_points = points + ny * nx;
 
 	// print initial points
-	printf("Initial State: \n");
-	print_points(points);
+	if (rank == 0)
+	{
+		errstream << "Initial frame:\n";
+		print_points(errstream, points);
+	}
 
 
 	// Delegate a thread to responding to other nodes
@@ -709,7 +782,7 @@ int main(int argc, char** argv)
 	// timestep variable
 	size_t t;
 
-	for (t = 1; t<MAX_ITERS; ++t)
+	for (t=1; t<MAX_ITERS; ++t)
 	{
 		
 		// Checkpointing procedure
@@ -750,6 +823,9 @@ int main(int argc, char** argv)
 		
 		if (err)
 		{
+			errstream << "Error at line " << __LINE__ << "\n";
+			MPI_Abort(MPI_COMM_WORLD, err);
+			MPI_Finalize();
 			return -1;
 		}
 		
@@ -765,7 +841,8 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		fprintf(stderr, "MPI ERROR: %s\n", estring);
+		errstream << "Error at line " << __LINE__ << "\n";
+		errstream << "MPI ERROR: " << estring << "\n";
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
@@ -790,7 +867,8 @@ int main(int argc, char** argv)
 				if (err)
 				{
 					MPI_Error_string(err, estring, nullptr);
-					fprintf(stderr, "MPI ERROR: %s\n", estring);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << "\n";
 					MPI_Abort(MPI_COMM_WORLD, err);
 					MPI_Finalize();
 					return err;
@@ -803,8 +881,11 @@ int main(int argc, char** argv)
 	sendback.join();
 
 	// print ending points
-	printf("Ending State: \n");
-	print_points(points);
+	if (rank == 0)
+	{
+		errstream << "Ending Frame:\n";
+		print_points(errstream, points);
+	}
 	
 	
 	MPI_Finalize();
