@@ -1,4 +1,4 @@
-// mpic++ -std=c++17 -fno-exceptions -fopenmp -fsanitize=address -fsanitize=leak -o d.out omp_mpi_simul.cc
+// mpic++ -fno-exceptions -fopenmp -fsanitize=address -fsanitize=leak -o d.out omp_mpi_simul.cc -g
 
 #include <stdio.h>
 #include <cmath>
@@ -9,23 +9,24 @@
 #include <thread>
 #include <string>
 #include <fstream>
+#include <iostream>
+#include <numeric>
+#include <array>
+
 
 // Max iters
 #define MAX_ITERS 500
 #define CHECKPOINT 100
 
 // Length of the domain
-#define Lx 30
-#define Ly 30
+#define Lx 90
+#define Ly 90
 
 // Discretized differentials
 #define dx 1.0f
 #define dy 1.0f
 #define dt 0.01f
 
-// Start, end time
-#define T_0 0
-#define T_f 3
 
 // Thermal diffusivity
 #define alpha 0.5
@@ -42,9 +43,6 @@
 #endif
 
 static size_t nx,ny;
-static int neighbors[4];
-static char estring[MPI_MAX_ERROR_STRING] = {0};
-static float *current_frame;
 static std::ofstream errstream;
 
 enum directions
@@ -59,85 +57,9 @@ enum tags
 {
 	FRAME_INIT,
 	FRAME_END,
-	REQ_VALUE,
-	SUPPL_VALUE
+	REMOTE_VALUE
 };
 
-int respond_routine(bool *terminate)
-{
-	MPI_Request req[4];
-	size_t request_arr[2*4];
-
-	int err;
-
-	for (size_t i=0; i<4; ++i)
-	{
-		if (neighbors[i] == -1)
-		{
-			continue;
-		}
-
-		err = MPI_Irecv(request_arr+i*2, 2, MPI_UNSIGNED_LONG, neighbors[i], REQ_VALUE, MPI_COMM_WORLD, &req[i]);
-
-		if (err)
-		{
-			MPI_Error_string(err, estring, nullptr);
-			errstream << "Error at line " << __LINE__ << "\n";
-			errstream << "MPI ERROR: " << estring << "\n";
-			return -1;
-		}
-	}
-
-	while (!(*terminate))
-	{
-		// For every neighbor, check if it has requested values
-		for (size_t i=0; i<4; ++i)
-		{
-			// No neighbor = skip
-			if (neighbors[i] == -1)
-			{
-				continue;
-			}
-
-			int flag;
-			MPI_Test(req+i, &flag, MPI_STATUS_IGNORE);
-
-			if (flag)
-			{
-				size_t x = request_arr[i*3];
-				size_t y = request_arr[i*3+1];
-
-				x = std::min(x, nx-1);
-				y = std::min(y, ny-1);
-
-				float val = current_frame[y*nx + x];
-
-				// Respond with requested values
-				MPI_Send(&val, 1, MPI_FLOAT, neighbors[i], SUPPL_VALUE, MPI_COMM_WORLD);
-
-				if (err)
-				{
-					MPI_Error_string(err, estring, nullptr);
-					errstream << "Error at line " << __LINE__ << "\n";
-					errstream << "MPI ERROR: " << estring << "\n";
-					return -1;
-				}
-
-				// Listen for further requests
-				MPI_Irecv(request_arr+i*2, 2, MPI_UNSIGNED_LONG, neighbors[i], REQ_VALUE, MPI_COMM_WORLD, &req[i]);
-				if (err)
-				{
-					MPI_Error_string(err, estring, nullptr);
-					errstream << "Error at line " << __LINE__ << "\n";
-					errstream << "MPI ERROR: " << estring << "\n";
-					return -1;
-				}
-			}
-		}
-	}
-
-	return 0;
-}
 
 void print_graph(std::ofstream& f, const float* points)
 {
@@ -181,103 +103,7 @@ void checkpoint(std::ofstream& f, const float* points, size_t process_rank)
 	}
 }
 
-template <size_t DIRECTION>
-int get_remote_value(size_t x, float* out)
-{
-	size_t arr[3] = {0, nx, ny};
-	int err;
-	
-	
-	if constexpr (DIRECTION == NORTH)
-	{
-		// SOUTH of neighbor
-		arr[0] = (ny-1)*nx + x;
-		
-		#pragma omp critical(critical_north)
-		{
-			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[NORTH], REQ_VALUE, MPI_COMM_WORLD);
-			
-			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[NORTH], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		
-		}
-		
-		if (err)
-		{
-			MPI_Error_string(err, estring, nullptr);
-			errstream << "Error at line " << __LINE__ << "\n";
-			errstream << "MPI ERROR: " << estring << "\n";
-			//MPI_Finalize();
-		}
 
-	}
-	
-	if constexpr (DIRECTION == WEST)
-	{
-		// EAST of neighbor
-		arr[0] = x * nx + nx-1;
-		
-		#pragma omp critical(critical_west)
-		{
-			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[WEST], REQ_VALUE, MPI_COMM_WORLD);
-			
-			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[WEST], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		}
-		
-		if (err)
-		{
-			MPI_Error_string(err, estring, nullptr);
-			errstream << "Error at line " << __LINE__ << "\n";
-			errstream << "MPI ERROR: " << estring << "\n";
-
-		}
-	
-	}
-	
-	if constexpr (DIRECTION == SOUTH)
-	{
-		// NORTH of neighbor
-		arr[0] = x;
-		
-		
-		#pragma omp critical(critical_south)
-		{
-			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[SOUTH], REQ_VALUE, MPI_COMM_WORLD);
-			
-			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[SOUTH], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		}
-		
-		if (err)
-		{
-			MPI_Error_string(err, estring, nullptr);
-			errstream << "Error at line " << __LINE__ << "\n";
-			errstream << "MPI ERROR: " << estring << "\n";
-		}
-	}
-	
-	if constexpr (DIRECTION == EAST)
-	{
-		// WEST of neighbor
-		arr[0] = x*nx;
-		
-		
-		#pragma omp critical(critical_east)
-		{
-			err = MPI_Send(arr, 3, MPI_UNSIGNED_LONG, neighbors[EAST], REQ_VALUE, MPI_COMM_WORLD);
-			
-			err = MPI_Recv(out, 1, MPI_FLOAT, neighbors[EAST], SUPPL_VALUE, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-		}
-		
-		
-		if (err)
-		{
-			MPI_Error_string(err, estring, nullptr);
-			errstream << "Error at line " << __LINE__ << "\n";
-			errstream << "MPI ERROR: " << estring << "\n";
-		}
-	}
-	
-	return err;
-}
 
 float fdivide2(const float f)
 {
@@ -296,283 +122,22 @@ float fmul2(const float f)
 }
 
 
-int get_neighboring_values(size_t x, size_t y, const float *points, float *out_values)
-{
-	int err;
-	
-	if (x == 0 && y == 0)
-	{
-		out_values[EAST] = points[y*nx + x + 1];
-		out_values[SOUTH] = points[(y+1)*nx + x];
-		
-		if (neighbors[NORTH] != -1)
-		{
-			err = get_remote_value<NORTH>(x, &out_values[NORTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-			
-		}
-		else
-		{
-			out_values[NORTH] = fdivide2(out_values[EAST] + out_values[SOUTH]);
-		}
-		
-		if (neighbors[WEST] != -1)
-		{
-			err = get_remote_value<WEST>(y, &out_values[WEST]);
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-			
-		}
-		else
-		{
-			out_values[WEST] = fdivide2(out_values[EAST] + out_values[SOUTH]);
-		}
-		
-		return 0;
-	}
-	
-	if (x == 0 && y == (ny-1))
-	{
-		out_values[EAST] = points[y*nx + x + 1];
-		out_values[NORTH] = points[(y-1)*nx + x];
-		
-		if (neighbors[SOUTH] != -1)
-		{
-			err = get_remote_value<SOUTH>(x, &out_values[SOUTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[SOUTH] = fdivide2(out_values[EAST] + out_values[NORTH]);
-		}
-	
-		if (neighbors[WEST] != -1)
-		{
-			err = get_remote_value<WEST>(y, &out_values[WEST]);
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-			
-		}
-		else
-		{
-			out_values[WEST] = fdivide2(out_values[EAST] + out_values[NORTH]);
-		}
-		
-		return 0;
-	}
-	
-	if (x == (nx-1) && y == 0)
-	{
-		out_values[WEST] = points[y*nx + x - 1];
-		out_values[SOUTH] = points[(y+1)*nx + x];
-		
-		if (neighbors[NORTH] != -1)
-		{
-			err = get_remote_value<NORTH>(x, &out_values[NORTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-			
-		}
-		else
-		{
-			out_values[NORTH] = fdivide2(out_values[WEST] + out_values[SOUTH]);
-		}
-		
-		if (neighbors[EAST] != -1)
-		{
-			err = get_remote_value<EAST>(y, &out_values[EAST]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[EAST] = fdivide2(out_values[WEST] + out_values[SOUTH]);
-		}
-	
-		return 0;
-	}
-	
-	if (x == (nx-1) && y == (ny-1))
-	{
-		out_values[WEST] = points[y*nx + x - 1];
-		out_values[NORTH] = points[(y+1)*nx + x];
-		
-		if (neighbors[SOUTH] != -1)
-		{
-			err = get_remote_value<SOUTH>(x, &out_values[SOUTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[SOUTH] = fdivide2(out_values[WEST] + out_values[NORTH]);
-		}
-		
-		if (neighbors[EAST] != -1)
-		{
-			err = get_remote_value<EAST>(y, &out_values[EAST]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}	
-		}
-		else
-		{
-			out_values[EAST] = fdivide2(out_values[WEST] + out_values[NORTH]);
-		}
-		
-		return 0;
-	}
-	
-	
-	if (x == 0 && y != 0 && y != (ny-1))
-	{
-		out_values[NORTH] = points[(y-1)*nx + x];
-		out_values[SOUTH] = points[(y+1)*nx + x];
-		out_values[EAST] = points[y*nx + x + 1];
-		
-		if (neighbors[WEST] != -1)
-		{
-			err = get_remote_value<WEST>(y, &out_values[WEST]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[WEST] = (out_values[NORTH] + out_values[SOUTH] + out_values[EAST]) / 3.0f;
-		}
-		
-		return 0;
-	}
-	
-	
-	if (y == 0 && x != 0 && x != (nx-1))
-	{
-		out_values[WEST] = points[y*nx + x - 1];
-		out_values[SOUTH] = points[(y+1)*nx + x];
-		out_values[EAST] = points[y*nx + x + 1];
-		
-		if (neighbors[NORTH] != -1)
-		{
-			err = get_remote_value<NORTH>(y, &out_values[NORTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[NORTH] = (out_values[WEST] + out_values[SOUTH] + out_values[EAST]) / 3.0f;
-		}
-		
-		return 0;
-	}
-	
-	if (x == (nx-1) && y != 0 && y != (ny-1))
-	{
-		out_values[WEST] = points[y*nx + x - 1];
-		out_values[SOUTH] = points[(y+1)*nx + x];
-		out_values[NORTH] = points[(y-1)*nx + x];
-		
-		if (neighbors[EAST] != -1)
-		{
-			err = get_remote_value<EAST>(y, &out_values[EAST]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[EAST] = (out_values[WEST] + out_values[SOUTH] + out_values[NORTH]) / 3.0f;
-		}
-		
-		return 0;
-	}
-	
-	
-	if (y == (ny-1) && x != 0 && x != (nx-1))
-	{
-		out_values[WEST] = points[y*nx + x - 1];
-		out_values[EAST] = points[y*nx + x + 1];
-		out_values[NORTH] = points[(y-1)*nx + x];
-		
-		if (neighbors[SOUTH] != -1)
-		{
-			err = get_remote_value<SOUTH>(y, &out_values[SOUTH]);
-			
-			if (err)
-			{
-				errstream << "Error at line " << __LINE__ << "\n";
-				return -1;
-			}
-		}
-		else
-		{
-			out_values[SOUTH] = (out_values[WEST] + out_values[EAST] + out_values[NORTH]) / 3.0f;
-		}
-		
-		return 0;
-	}
-	
-	out_values[NORTH] = points[(y-1)*nx + x];
-	out_values[WEST] = points[y*nx + x - 1];
-	out_values[EAST] = points[y*nx + x + 1];
-	out_values[SOUTH] = points[(y+1)*nx + x];
-	
-	return 0;
-}
-
 
 int main(int argc, char** argv)
 {
 	// Error variables
 	int err;
+	char estring[MPI_MAX_ERROR_STRING] = {0};
+
+	// Neighbors array
+	int neighbors[4];
 
 	// Initialize MPI
 	err = MPI_Init(&argc, &argv);
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		std::cerr << "MPI ERROR: " << estring << "\n";
+		std::cerr << "MPI ERROR: " << estring << std::endl;
 		MPI_Finalize();
 		return err;
 	}
@@ -584,7 +149,7 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		std::cerr << "MPI ERROR: " << estring << "\n";
+		std::cerr << "MPI ERROR: " << estring << std::endl;
 		MPI_Finalize();
 		return err;
 	}
@@ -596,7 +161,7 @@ int main(int argc, char** argv)
 	if (err)
 	{
 		MPI_Error_string(err, estring, nullptr);
-		std::cerr << "MPI ERROR: " << estring << "\n";
+		std::cerr << "MPI ERROR: " << estring << std::endl;
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
@@ -620,7 +185,7 @@ int main(int argc, char** argv)
 	size_t sqrt_n_nodes_y = (size_t) std::ceil(std::sqrt((float)n_nodes));
 	size_t full_ny, full_nx;
 
-	errstream << "sqrt_n_nodes_x : " << sqrt_n_nodes_x << "\tsqrt_n_nodes_y : " << sqrt_n_nodes_y << "\n";
+	errstream << "sqrt_n_nodes_x : " << sqrt_n_nodes_x << "\tsqrt_n_nodes_y : " << sqrt_n_nodes_y << std::endl;
 	
 	// Allocate memory and scatter domain from master to slaves
 	std::unique_ptr<float[]> buffer;
@@ -635,7 +200,7 @@ int main(int argc, char** argv)
 		
 		if (buffer == nullptr)
 		{
-			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "Error at line " << __LINE__ << std::endl;
 			MPI_Abort(MPI_COMM_WORLD, err);
 			MPI_Finalize();
 			return err;
@@ -659,18 +224,6 @@ int main(int argc, char** argv)
 	size_t rem_nx = (Lx + 1) % sqrt_n_nodes_x;
 	size_t rem_ny = (Ly + 1) % sqrt_n_nodes_y;
 	
-	
-	recv_buffer = std::make_unique<float[]>((nx+rem_nx) * (ny+rem_ny) * (CHECKPOINT+1));
-	
-	if (recv_buffer == nullptr)
-	{
-		MPI_Error_string(err, estring, nullptr);
-		errstream << "Error at line " << __LINE__ << "\n";
-		MPI_Abort(MPI_COMM_WORLD, err);
-		MPI_Finalize();
-		return err;
-	}
-	
 	// Distribute initial frames amongst nodes	
 	if (rank == 0)
 	{
@@ -683,7 +236,7 @@ int main(int argc, char** argv)
 			for (size_t j=0; j<sqrt_n_nodes_x; ++j)
 			{
 				starting_ptr = buffer.get() + i*full_nx + j*nx;
-				to = (i/ny)*sqrt_n_nodes_x + j;
+				to = (((i/ny) < sqrt_n_nodes_y) ? (i/ny) : (i/ny)-1) * sqrt_n_nodes_x + j;
 				count = nx + ((j == sqrt_n_nodes_x-1) ? rem_nx : 0);
 				
 				err = MPI_Send(starting_ptr, count, MPI_FLOAT, to, FRAME_INIT, MPI_COMM_WORLD);
@@ -692,7 +245,7 @@ int main(int argc, char** argv)
 				{
 					MPI_Error_string(err, estring, nullptr);
 					errstream << "Error at line " << __LINE__ << "\n";
-					errstream << "MPI ERROR: " << estring << "\n";
+					errstream << "MPI ERROR: " << estring << std::endl;
 					MPI_Abort(MPI_COMM_WORLD, err);
 					MPI_Finalize();
 					return err;
@@ -705,29 +258,38 @@ int main(int argc, char** argv)
 	nx += ((rank+1) % sqrt_n_nodes_x == 0) ? rem_nx : 0;
 	ny += (rank+1 - (sqrt_n_nodes_y-1) * sqrt_n_nodes_x >= 0) ? rem_ny : 0;
 
-	errstream << "nx : " << nx << "ny : " << ny << "\n";
-	
-	size_t recv_size = nx * ny;
-	
-	err = MPI_Recv(recv_buffer.get(), recv_size, MPI_FLOAT, 0, FRAME_INIT, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-	
-	if (err)
+	recv_buffer = std::make_unique<float[]>(nx * ny * (CHECKPOINT+1));
+
+	if (recv_buffer == nullptr)
 	{
-		MPI_Error_string(err, estring, nullptr);
-		errstream << "Error at line " << __LINE__ << "\n";
-		errstream << "MPI ERROR: " << estring << "\n";
+		errstream << "Error at line " << __LINE__ << std::endl;
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return err;
 	}
 
+	errstream << "nx : " << nx << "ny : " << ny << std::endl;
+	
+	size_t recv_size = nx * ny;
+	
+	for (size_t y=0; y<ny; ++y)
+	{
+		err = MPI_Recv(recv_buffer.get() + y*nx, nx, MPI_FLOAT, 0, FRAME_INIT, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+	
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << std::endl;
+			MPI_Abort(MPI_COMM_WORLD, err);
+			MPI_Finalize();
+			return err;
+		}
+	}
 	
 	// Initialize spatial differentials
 	const float dx_squared = std::pow(dx, 2);
 	const float dy_squared = std::pow(dy, 2);
-	
-	// Gridpoint variables
-	size_t x, y;
 	
 	// Get own filename
 	char filename[MAX_PATH];
@@ -738,43 +300,85 @@ int main(int argc, char** argv)
 
 	if (!f.is_open())
 	{
-		errstream << "Error at line " << __LINE__ << "\n";
+		errstream << "Error at line " << __LINE__ << std::endl;
 		MPI_Abort(MPI_COMM_WORLD, err);
 		MPI_Finalize();
 		return -1;
 	}
 	
-	errstream << "Cores: " << omp_get_max_threads() << "\n";
+	errstream << "Cores: " << omp_get_max_threads() << std::endl;
 	
 	
 	// NORTH
-	neighbors[NORTH] = (rank >= sqrt_n_nodes_x) ? (rank - sqrt_n_nodes_x - 1) : -1;
+	std::array<std::unique_ptr<float[]>, 4> remote_data;
+
+	if (rank >= sqrt_n_nodes_x)
+	{ 
+		neighbors[NORTH] = (rank - sqrt_n_nodes_x - 1);
+		remote_data[NORTH] = std::make_unique<float[]>(nx);
+		memcpy(remote_data[NORTH].get(), recv_buffer.get(), sizeof(float) * nx);
+	}
+	else
+	{
+		neighbors[NORTH] = -1;
+	}
 	
+
 	// WEST
-	neighbors[WEST] = (rank % sqrt_n_nodes_x != 0) ? (rank - 1) : -1;
+	if (rank % sqrt_n_nodes_x != 0)
+	{
+		neighbors[WEST] = (rank - 1);
+		remote_data[WEST] = std::make_unique<float[]>(ny);
+		
+		for (size_t i=0; i<ny; ++i)
+		{
+			remote_data[WEST][i] = recv_buffer[i*nx];
+		}
+	}
+	else
+	{
+		neighbors[WEST] = -1;
+	}
 	
 	// SOUTH
-	neighbors[SOUTH] = (rank < (sqrt_n_nodes_y-1) * (sqrt_n_nodes_x)) ? (rank + sqrt_n_nodes_x) : -1;
+	if (rank < (sqrt_n_nodes_y-1) * (sqrt_n_nodes_x))
+	{
+		neighbors[SOUTH] = (rank + sqrt_n_nodes_x);
+		remote_data[SOUTH] = std::make_unique<float[]>(nx);
+
+		memcpy(remote_data[NORTH].get(), recv_buffer.get() + (ny-1) * nx, sizeof(float) * nx);
+	}
+	else
+	{
+		neighbors[SOUTH] = -1;
+	}
 	
 	// EAST
-	neighbors[EAST] = ((rank+1) % sqrt_n_nodes_x != 0) ? (rank + 1) : -1;
+	if ((rank+1) % sqrt_n_nodes_x != 0)
+	{
+		neighbors[EAST] = (rank + 1);
+		remote_data[EAST] = std::make_unique<float[]>(ny);
 
+		for (size_t i=0; i<ny; ++i)
+		{
+			remote_data[EAST][i] = recv_buffer[i*nx + (nx-1)];
+		}
+	}
+	else
+	{
+		neighbors[EAST] = -1;
+	}
 	
 	// Pointers to frame
 	float *points = recv_buffer.get();
 	float *new_points = points + ny * nx;
 
 	// print initial points
-	if (rank == 0)
-	{
-		errstream << "Initial frame:\n";
+	
+		errstream << "Initial frame:" << std::endl;
 		print_points(errstream, points);
-	}
+		errstream.flush();
 
-
-	// Delegate a thread to responding to other nodes
-	bool terminate = false;
-	std::thread sendback(respond_routine, &terminate);
 
 	// checkpoint counter
 	size_t c = 0;
@@ -782,6 +386,7 @@ int main(int argc, char** argv)
 	// timestep variable
 	size_t t;
 
+	
 	for (t=1; t<MAX_ITERS; ++t)
 	{
 		
@@ -790,25 +395,60 @@ int main(int argc, char** argv)
 		{
 			checkpoint(f, new_points, rank);
 		}
+
+		std::array<MPI_Request, 4> requests;
+
+		// Send, receive neighboring data
+		for (int n=0; n<4; ++n)
+		{
+			if (neighbors[n] != -1)
+			{
+				err = MPI_Send(remote_data[n].get(), (n % 2) ? ny : nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+
+				if (err)
+				{
+					MPI_Error_string(err, estring, nullptr);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << std::endl;
+					MPI_Abort(MPI_COMM_WORLD, err);
+					MPI_Finalize();
+					return err;
+				}
+
+				err = MPI_Irecv(remote_data[n].get(), (n % 2) ? ny : nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD, &(requests[n]));
+
+				if (err)
+				{
+					MPI_Error_string(err, estring, nullptr);
+					errstream << "Error at line " << __LINE__ << "\n";
+					errstream << "MPI ERROR: " << estring << std::endl;
+					MPI_Abort(MPI_COMM_WORLD, err);
+					MPI_Finalize();
+					return err;
+				}
+			}
+		}
 				
 		// Adjust pointers to next frame
 		points = recv_buffer.get() + ((t-1) % CHECKPOINT) * ny * nx;
 		new_points = recv_buffer.get() + (t % CHECKPOINT) * ny * nx;
-		current_frame = points;
-		
-		int err = 0;
+	
 		
 		// Grid points computation
 		#pragma omp parallel for shared(err)
-		for (size_t i=0; i<(ny*nx); ++i)
+		for (size_t i=nx; i<((ny-1)*nx); ++i)
 		{
-					
-			y = i / nx;
-			x = i % nx;
+
+			size_t y = i / nx;
+			size_t x = i % nx;
+
+			if (x == 0 || x == nx-1)
+				continue;
 			
-			float stencil[4];
-			
-			err = get_neighboring_values(x, y, points, stencil);
+			float stencil[4] = {points[(y-1)*nx + x],
+				points[y*nx + x - 1],
+				points[(y+1)*nx + x],
+				points[y*nx + x + 1]};
 				
 			new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
 			
@@ -823,12 +463,293 @@ int main(int argc, char** argv)
 		
 		if (err)
 		{
-			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "Error at line " << __LINE__ << std::endl;
 			MPI_Abort(MPI_COMM_WORLD, err);
 			MPI_Finalize();
 			return -1;
 		}
 		
+		// Wait for data and deal with boundaries, excluding corners
+		#pragma omp parallel for
+		for (int n=0; n<4; ++n)
+		{
+			std::array<float, 4> stencil = {0.0f};
+
+			if (neighbors[n] != -1)
+			{
+				MPI_Wait(&(requests[n]), MPI_STATUS_IGNORE);
+
+				for (size_t i=1; i<((n % 2) ? (ny-1) : (nx-1)); ++i)
+				{
+					
+					size_t k;
+
+					switch (n)
+					{
+					case NORTH:
+						stencil[NORTH] = remote_data[NORTH][i];
+						stencil[SOUTH] = points[nx + i];
+						stencil[WEST] = points[i-1];
+						stencil[EAST] = points[i+1];
+						k = i;
+						break;
+
+					case SOUTH:
+						stencil[NORTH] = points[(ny-2)*nx + i];
+						stencil[SOUTH] = remote_data[SOUTH][i];
+						stencil[WEST] = points[(ny-1)*nx + i - 1];
+						stencil[EAST] = points[(ny-1)*nx + i + 1];
+						k = (ny-1)*nx + i;
+						break;
+
+					case WEST:
+						stencil[NORTH] = points[(i-1)*nx];
+						stencil[SOUTH] = points[(i+1)*nx];
+						stencil[WEST] = remote_data[WEST][i];
+						stencil[EAST] = points[i*nx + 1];
+						k = i*nx;
+						break;
+					
+					case EAST:
+						stencil[NORTH] = points[(i-1)*nx + nx-1];
+						stencil[SOUTH] = points[(i+1)*nx + nx-1];
+						stencil[WEST] = points[i*nx + (nx-2)];
+						stencil[EAST] = remote_data[EAST][i];
+						k = i*nx + nx-1;
+						break;
+
+					default:
+						break;
+					}
+
+					new_points[k] = points[k] + dt * alpha * (
+			
+					(stencil[WEST] - fmul2(points[k]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - fmul2(points[k]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
+				}
+			}
+			else
+			{
+				for (size_t i=1; i<((n % 2) ? (nx-1) : (ny-1)); ++i)
+				{
+					
+					size_t k;
+
+					switch (n)
+					{
+					case NORTH:
+						stencil[SOUTH] = points[nx + i];
+						stencil[WEST] = points[i-1];
+						stencil[EAST] = points[i+1];
+						stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
+						k = i;
+						break;
+
+					case SOUTH:
+						stencil[NORTH] = points[(ny-2)*nx + i];
+						stencil[WEST] = points[(ny-1)*nx + i - 1];
+						stencil[EAST] = points[(ny-1)*nx + i + 1];
+						stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
+						k = (ny-1)*nx + i;
+						break;
+
+					case WEST:
+						stencil[NORTH] = points[(i-1)*nx];
+						stencil[SOUTH] = points[(i+1)*nx];
+						stencil[EAST] = points[i*nx + 1];
+						stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
+						k = i*nx;
+						break;
+					
+					case EAST:
+						stencil[NORTH] = points[(i-1)*nx + nx-1];
+						stencil[SOUTH] = points[(i+1)*nx + nx-1];
+						stencil[WEST] = points[i*nx + (nx-2)];
+						stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
+						k = i*nx + nx-1;
+						break;
+
+					default:
+						break;
+					}
+
+					new_points[k] = points[k] + dt * alpha * (
+			
+					(stencil[WEST] - fmul2(points[k]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - fmul2(points[k]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
+				}
+			}
+		}
+
+		// Corners
+
+		// TOP LEFT
+		{
+			std::array<float, 4> stencil = {0.0f};
+
+			stencil[SOUTH] = points[nx];
+			stencil[EAST] = points[1];
+			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? remote_data[NORTH][0] : 0.0f;
+			stencil[WEST] = ((neighbors[WEST] != -1)) ? remote_data[WEST][0] : 0.0f;
+
+			if (neighbors[NORTH] == -1)
+			{
+					stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[WEST] != -1) ? 3.0f : 2.0f);
+			}
+
+			if (neighbors[WEST] == -1)
+			{
+					stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[NORTH] != -1) ? 3.0f : 2.0f);
+			}
+
+			new_points[0] = points[0] + dt * alpha * (
+
+				(stencil[WEST] - fmul2(points[0]) + stencil[EAST])
+						* (1.0f/dx_squared)
+				+
+				(stencil[NORTH] - fmul2(points[0]) + stencil[SOUTH])
+						* (1.0f/dy_squared)
+				);
+		}
+
+		// TOP RIGHT
+		{
+			std::array<float, 4> stencil = {0.0f};
+
+			stencil[SOUTH] = points[nx + nx-1];
+			stencil[WEST] = points[nx-2];
+			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? remote_data[NORTH][nx-1] : 0.0f;
+			stencil[EAST] = ((neighbors[EAST] != -1)) ? remote_data[EAST][0] : 0.0f;
+
+			if (neighbors[NORTH] == -1)
+			{
+					stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[EAST] != -1) ? 3.0f : 2.0f);
+			}
+
+			if (neighbors[EAST] == -1)
+			{
+					stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[NORTH] != -1) ? 3.0f : 2.0f);
+			}
+
+			new_points[nx-1] = points[nx-1] + dt * alpha * (
+
+				(stencil[WEST] - fmul2(points[nx-1]) + stencil[EAST])
+						* (1.0f/dx_squared)
+				+
+				(stencil[NORTH] - fmul2(points[nx-1]) + stencil[SOUTH])
+						* (1.0f/dy_squared)
+				);
+		}
+
+		// BOTTOM LEFT
+		{
+			std::array<float, 4> stencil = {0.0f};
+
+			stencil[NORTH] = points[(ny-2)*nx];
+			stencil[EAST] = points[(ny-1)*nx + 1];
+			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? remote_data[SOUTH][0] : 0.0f;
+			stencil[WEST] = ((neighbors[WEST] != -1)) ? remote_data[WEST][ny-1] : 0.0f;
+
+			if (neighbors[SOUTH] == -1)
+			{
+					stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[WEST] != -1) ? 3.0f : 2.0f);
+			}
+
+			if (neighbors[WEST] == -1)
+			{
+					stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[SOUTH] != -1) ? 3.0f : 2.0f);
+			}
+
+			new_points[(ny-1)*nx] = points[(ny-1)*nx] + dt * alpha * (
+
+				(stencil[WEST] - fmul2(points[(ny-1)*nx]) + stencil[EAST])
+						* (1.0f/dx_squared)
+				+
+				(stencil[NORTH] - fmul2(points[(ny-1)*nx]) + stencil[SOUTH])
+						* (1.0f/dy_squared)
+				);
+		}
+
+		// BOTTOM RIGHT
+		{
+			std::array<float, 4> stencil = {0.0f};
+
+			stencil[NORTH] = points[(ny-2)*nx + nx - 1];
+			stencil[WEST] = points[(ny-1)*nx + nx - 2];
+			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? remote_data[SOUTH][nx-1] : 0.0f;
+			stencil[EAST] = ((neighbors[EAST] != -1)) ? remote_data[EAST][ny-1] : 0.0f;
+
+			if (neighbors[SOUTH] == -1)
+			{
+					stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[EAST] != -1) ? 3.0f : 2.0f);
+			}
+
+			if (neighbors[EAST] == -1)
+			{
+					stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ ((neighbors[SOUTH] != -1) ? 3.0f : 2.0f);
+			}
+
+			new_points[(ny-1)*nx + nx - 1] = points[(ny-1)*nx + nx - 1] + dt * alpha * (
+
+				(stencil[WEST] - fmul2(points[(ny-1)*nx + nx - 1]) + stencil[EAST])
+						* (1.0f/dx_squared)
+				+
+				(stencil[NORTH] - fmul2(points[(ny-1)*nx + nx - 1]) + stencil[SOUTH])
+						* (1.0f/dy_squared)
+				);
+		}
+
+		// Copy freshly calculatated bordering points into send buffers
+		// Recopy data to send buffer
+
+		#pragma omp parallel for
+		for (int n=0; n<4; ++n)
+		{
+			if (neighbors[n] != -1)
+			{
+				switch (n)
+				{
+				case NORTH:
+					memcpy(remote_data[NORTH].get(), points, sizeof(float) * nx);
+					break;
+
+				case SOUTH:
+					memcpy(remote_data[SOUTH].get(), points + (ny-1)*nx, sizeof(float) * nx);
+					break;
+				
+				case WEST:
+					for (size_t i=0; i<ny; ++i)
+					{
+						remote_data[WEST][i] = points[i*nx];
+					}
+					break;
+
+				case EAST:
+					for (size_t i=0; i<ny; ++i)
+					{
+						remote_data[WEST][i] = points[i*nx + nx-1];
+					}
+					break;
+				}
+			}
+		}
+
 		// Synchronization point
 		MPI_Barrier(MPI_COMM_WORLD);
 	}
@@ -836,18 +757,23 @@ int main(int argc, char** argv)
 	// Last checkpoint
 	checkpoint(f, new_points, rank);
 	
-	err = MPI_Send(recv_buffer.get(), recv_size, MPI_FLOAT, 0, FRAME_END, MPI_COMM_WORLD);
-	
-	if (err)
+	// Send last frame chunk to master
+	for (size_t y=0; y<ny; ++y)
 	{
-		MPI_Error_string(err, estring, nullptr);
-		errstream << "Error at line " << __LINE__ << "\n";
-		errstream << "MPI ERROR: " << estring << "\n";
-		MPI_Abort(MPI_COMM_WORLD, err);
-		MPI_Finalize();
-		return err;
+		err = MPI_Send(recv_buffer.get() + y*nx, nx, MPI_FLOAT, 0, FRAME_END, MPI_COMM_WORLD);
+
+		if (err)
+		{
+			MPI_Error_string(err, estring, nullptr);
+			errstream << "Error at line " << __LINE__ << "\n";
+			errstream << "MPI ERROR: " << estring << std::endl;
+			MPI_Abort(MPI_COMM_WORLD, err);
+			MPI_Finalize();
+			return err;
+		}
 	}
 	
+	// Collect last frame chunks from slaves
 	if (rank == 0)
 	{
 		for (size_t i=0; i<full_ny; ++i)
@@ -868,7 +794,7 @@ int main(int argc, char** argv)
 				{
 					MPI_Error_string(err, estring, nullptr);
 					errstream << "Error at line " << __LINE__ << "\n";
-					errstream << "MPI ERROR: " << estring << "\n";
+					errstream << "MPI ERROR: " << estring << std::endl;
 					MPI_Abort(MPI_COMM_WORLD, err);
 					MPI_Finalize();
 					return err;
@@ -876,16 +802,11 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	
-	terminate = true;
-	sendback.join();
 
 	// print ending points
-	if (rank == 0)
-	{
-		errstream << "Ending Frame:\n";
-		print_points(errstream, points);
-	}
+	errstream << "Ending Frame:" << std::endl;
+	print_points(errstream, points);
+	errstream.flush();
 	
 	
 	MPI_Finalize();
