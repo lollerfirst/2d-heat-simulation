@@ -239,6 +239,7 @@ int main(int argc, char** argv)
 				to = (((i/ny) < sqrt_n_nodes_y) ? (i/ny) : (i/ny)-1) * sqrt_n_nodes_x + j;
 				count = nx + ((j == sqrt_n_nodes_x-1) ? rem_nx : 0);
 				
+				errstream << "Sending line " << i << ", chunk " << j << " to " << to << ": " << count << " floats" << std::endl;
 				err = MPI_Send(starting_ptr, count, MPI_FLOAT, to, FRAME_INIT, MPI_COMM_WORLD);
 				
 				if (err)
@@ -255,8 +256,8 @@ int main(int argc, char** argv)
 	}
 	
 	// Receive initial frame from master node
-	nx += ((rank+1) % sqrt_n_nodes_x == 0) ? rem_nx : 0;
-	ny += (rank+1 - (sqrt_n_nodes_y-1) * sqrt_n_nodes_x >= 0) ? rem_ny : 0;
+	nx += (((rank+1) % sqrt_n_nodes_x == 0))  ? rem_nx : 0;
+	ny += ((rank+1 - (sqrt_n_nodes_y-1) * sqrt_n_nodes_x) >= 0) ? rem_ny : 0;
 
 	recv_buffer = std::make_unique<float[]>(nx * ny * (CHECKPOINT+1));
 
@@ -270,12 +271,12 @@ int main(int argc, char** argv)
 
 	errstream << "nx : " << nx << "ny : " << ny << std::endl;
 	
-	size_t recv_size = nx * ny;
 	
 	for (size_t y=0; y<ny; ++y)
 	{
 		err = MPI_Recv(recv_buffer.get() + y*nx, nx, MPI_FLOAT, 0, FRAME_INIT, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-	
+		errstream << "Received line " << y << " from 0: " << nx << " floats" << std::endl;
+
 		if (err)
 		{
 			MPI_Error_string(err, estring, nullptr);
@@ -375,9 +376,9 @@ int main(int argc, char** argv)
 
 	// print initial points
 	
-		errstream << "Initial frame:" << std::endl;
-		print_points(errstream, points);
-		errstream.flush();
+	errstream << "Initial frame:" << std::endl;
+	print_points(errstream, points);
+	errstream.flush();
 
 
 	// checkpoint counter
@@ -743,7 +744,7 @@ int main(int argc, char** argv)
 				case EAST:
 					for (size_t i=0; i<ny; ++i)
 					{
-						remote_data[WEST][i] = points[i*nx + nx-1];
+						remote_data[EAST][i] = points[i*nx + nx-1];
 					}
 					break;
 				}
