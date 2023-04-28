@@ -1,4 +1,4 @@
-// mpic++ -fno-exceptions -fsanitize=address -fsanitize=leak -fopenmp -o d.out omp_mpi_simul.cc -g
+// mpic++ -fno-exceptions -fsanitize=address -fopenmp -o d.out omp_mpi_simul.cc -g
 
 #include <stdio.h>
 #include <cmath>
@@ -12,6 +12,7 @@
 #include <iostream>
 #include <numeric>
 #include <array>
+#include <iomanip>
 
 
 // Max iters
@@ -69,7 +70,7 @@ void print_graph(std::ofstream& f, const float* points)
 	{
 		for (x=0; x<nx; ++x)
 		{
-			f << x << " " << y << " " << points[y * nx + x] << "\n";
+			f << std::fixed << std::setprecision(4) << x << " " << y << " " << points[y * nx + x] << "\n";
 		}
 	}
 }
@@ -103,23 +104,6 @@ void checkpoint(std::ofstream& f, const float* points, size_t process_rank)
 	}
 }
 
-
-
-float fdivide2(const float f)
-{
-	int exp;
-	int mantix = std::frexp(f, &exp);
-	
-	return std::ldexp(mantix, --exp);
-}
-
-float fmul2(const float f)
-{
-	int exp;
-	int mantix = std::frexp(f, &exp);
-	
-	return std::ldexp(mantix, ++exp);
-}
 
 
 
@@ -462,10 +446,10 @@ int main(int argc, char** argv)
 				
 			new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
 			
-				(stencil[WEST] - 2.0*(points[y*nx + x]) + stencil[EAST])
+				(stencil[WEST] - 2.0f*points[y*nx + x] + stencil[EAST])
 						* (1.0f/dx_squared)
 				+
-				(stencil[NORTH] - 2.0*(points[y*nx + x]) + stencil[SOUTH])
+				(stencil[NORTH] - 2.0f*points[y*nx + x] + stencil[SOUTH])
 						* (1.0f/dy_squared)
 			);
 		
@@ -536,10 +520,10 @@ int main(int argc, char** argv)
 
 					new_points[k] = points[k] + dt * alpha * (
 			
-					(stencil[WEST] - 2.0*(points[k]) + stencil[EAST])
+					(stencil[WEST] - 2.0f*points[k] + stencil[EAST])
 							* (1.0f/dx_squared)
 					+
-					(stencil[NORTH] - 2.0*(points[k]) + stencil[SOUTH])
+					(stencil[NORTH] - 2.0f*points[k] + stencil[SOUTH])
 							* (1.0f/dy_squared)
 					);
 				}
@@ -595,15 +579,16 @@ int main(int argc, char** argv)
 		// TOP LEFT
 		{
 			std::array<float, 4> stencil = {0.0f};
+			int f = 2;
 
 			stencil[SOUTH] = points[nx];
 			stencil[EAST] = points[1];
-			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? remote_data[NORTH][0] : 0.0f;
-			stencil[WEST] = ((neighbors[WEST] != -1)) ? remote_data[WEST][0] : 0.0f;
+			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? (--f, remote_data[NORTH][0]) : 0.0f;
+			stencil[WEST] = ((neighbors[WEST] != -1)) ? (--f, remote_data[WEST][0]) : 0.0f;
 
-			if (neighbors[NORTH] == -1)
+			if (f > 0)
 			{
-				if (neighbors[WEST] == -1)
+				if (f == 2)
 				{
 						new_points[0] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
 							/ 2.0f;
@@ -620,10 +605,10 @@ int main(int argc, char** argv)
 			{
 				new_points[0] = points[0] + dt * alpha * (
 
-					(stencil[WEST] - 2.0*(points[0]) + stencil[EAST])
+					(stencil[WEST] - 2.0f*(points[0]) + stencil[EAST])
 							* (1.0f/dx_squared)
 					+
-					(stencil[NORTH] - 2.0*(points[0]) + stencil[SOUTH])
+					(stencil[NORTH] - 2.0f*(points[0]) + stencil[SOUTH])
 							* (1.0f/dy_squared)
 					);
 			}
@@ -632,15 +617,16 @@ int main(int argc, char** argv)
 		// TOP RIGHT
 		{
 			std::array<float, 4> stencil = {0.0f};
+			int f = 2;
 
 			stencil[SOUTH] = points[nx + nx-1];
 			stencil[WEST] = points[nx-2];
-			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? remote_data[NORTH][nx-1] : 0.0f;
-			stencil[EAST] = ((neighbors[EAST] != -1)) ? remote_data[EAST][0] : 0.0f;
+			stencil[NORTH] = ((neighbors[NORTH] != -1)) ? (--f, remote_data[NORTH][nx-1]) : 0.0f;
+			stencil[EAST] = ((neighbors[EAST] != -1)) ? (--f, remote_data[EAST][0]) : 0.0f;
 
-			if (neighbors[NORTH] == -1)
+			if (f > 0)
 			{
-				if (neighbors[EAST] == -1)
+				if (f == 2)
 				{
 						new_points[nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
 							/ 2.0f;
@@ -657,10 +643,10 @@ int main(int argc, char** argv)
 			{
 				new_points[nx-1] = points[nx-1] + dt * alpha * (
 
-					(stencil[WEST] - 2.0*(points[nx-1]) + stencil[EAST])
+					(stencil[WEST] - 2.0f*(points[nx-1]) + stencil[EAST])
 							* (1.0f/dx_squared)
 					+
-					(stencil[NORTH] - 2.0*(points[nx-1]) + stencil[SOUTH])
+					(stencil[NORTH] - 2.0f*(points[nx-1]) + stencil[SOUTH])
 							* (1.0f/dy_squared)
 					);
 			}
@@ -669,15 +655,16 @@ int main(int argc, char** argv)
 		// BOTTOM LEFT
 		{
 			std::array<float, 4> stencil = {0.0f};
+			int f = 2;
 
 			stencil[NORTH] = points[(ny-2)*nx];
 			stencil[EAST] = points[(ny-1)*nx + 1];
-			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? remote_data[SOUTH][0] : 0.0f;
-			stencil[WEST] = ((neighbors[WEST] != -1)) ? remote_data[WEST][ny-1] : 0.0f;
+			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? (--f, remote_data[SOUTH][0]) : 0.0f;
+			stencil[WEST] = ((neighbors[WEST] != -1)) ? (--f, remote_data[WEST][ny-1]) : 0.0f;
 
-			if (neighbors[SOUTH] == -1)
+			if (f > 0)
 			{
-				if (neighbors[WEST] == -1)
+				if (f == 2)
 				{
 						new_points[(ny-1)*nx] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
 							/ 2.0f;
@@ -706,15 +693,16 @@ int main(int argc, char** argv)
 		// BOTTOM RIGHT
 		{
 			std::array<float, 4> stencil = {0.0f};
+			int f = 2;
 
 			stencil[NORTH] = points[(ny-2)*nx + nx - 1];
 			stencil[WEST] = points[(ny-1)*nx + nx - 2];
-			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? remote_data[SOUTH][nx-1] : 0.0f;
-			stencil[EAST] = ((neighbors[EAST] != -1)) ? remote_data[EAST][ny-1] : 0.0f;
+			stencil[SOUTH] = ((neighbors[SOUTH] != -1)) ? (--f, remote_data[SOUTH][nx-1]) : 0.0f;
+			stencil[EAST] = ((neighbors[EAST] != -1)) ? (--f, remote_data[EAST][ny-1]) : 0.0f;
 
-			if (neighbors[SOUTH] == -1)
+			if (f > 0)
 			{
-				if (neighbors[EAST] == -1)
+				if (f == 2)
 				{
 						new_points[(ny-1)*nx+nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
 							/ 2.0f;
@@ -731,10 +719,10 @@ int main(int argc, char** argv)
 			{
 				new_points[(ny-1)*nx+nx-1] = points[(ny-1)*nx+nx-1] + dt * alpha * (
 
-					(stencil[WEST] - 2.0*(points[(ny-1)*nx+nx-1]) + stencil[EAST])
+					(stencil[WEST] - 2.0f*(points[(ny-1)*nx+nx-1]) + stencil[EAST])
 							* (1.0f/dx_squared)
 					+
-					(stencil[NORTH] - 2.0*(points[(ny-1)*nx+nx-1]) + stencil[SOUTH])
+					(stencil[NORTH] - 2.0f*(points[(ny-1)*nx+nx-1]) + stencil[SOUTH])
 							* (1.0f/dy_squared)
 					);
 			}
@@ -751,24 +739,24 @@ int main(int argc, char** argv)
 				switch (n)
 				{
 				case NORTH:
-					memcpy(remote_data[NORTH].get(), points, sizeof(float) * nx);
+					memcpy(remote_data[NORTH].get(), new_points, sizeof(float) * nx);
 					break;
 
 				case SOUTH:
-					memcpy(remote_data[SOUTH].get(), points + (ny-1)*nx, sizeof(float) * nx);
+					memcpy(remote_data[SOUTH].get(), new_points + (ny-1)*nx, sizeof(float) * nx);
 					break;
 				
 				case WEST:
 					for (size_t i=0; i<ny; ++i)
 					{
-						remote_data[WEST][i] = points[i*nx];
+						remote_data[WEST][i] = new_points[i*nx];
 					}
 					break;
 
 				case EAST:
 					for (size_t i=0; i<ny; ++i)
 					{
-						remote_data[EAST][i] = points[i*nx + nx-1];
+						remote_data[EAST][i] = new_points[i*nx + nx-1];
 					}
 					break;
 				}
