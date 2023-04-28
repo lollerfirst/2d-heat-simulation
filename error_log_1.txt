@@ -1,0 +1,2644 @@
+sqrt_n_nodes_x : 1	sqrt_n_nodes_y : 2
+nx : 91 ny : 46
+Received line 0 from 0: 91 floats
+Received line 1 from 0: 91 floats
+Received line 2 from 0: 91 floats
+Received line 3 from 0: 91 floats
+Received line 4 from 0: 91 floats
+Received line 5 from 0: 91 floats
+Received line 6 from 0: 91 floats
+Received line 7 from 0: 91 floats
+Received line 8 from 0: 91 floats
+Received line 9 from 0: 91 floats
+Received line 10 from 0: 91 floats
+Received line 11 from 0: 91 floats
+Received line 12 from 0: 91 floats
+Received line 13 from 0: 91 floats
+Received line 14 from 0: 91 floats
+Received line 15 from 0: 91 floats
+Received line 16 from 0: 91 floats
+Received line 17 from 0: 91 floats
+Received line 18 from 0: 91 floats
+Received line 19 from 0: 91 floats
+Received line 20 from 0: 91 floats
+Received line 21 from 0: 91 floats
+Received line 22 from 0: 91 floats
+Received line 23 from 0: 91 floats
+Received line 24 from 0: 91 floats
+Received line 25 from 0: 91 floats
+Received line 26 from 0: 91 floats
+Received line 27 from 0: 91 floats
+Received line 28 from 0: 91 floats
+Received line 29 from 0: 91 floats
+Received line 30 from 0: 91 floats
+Received line 31 from 0: 91 floats
+Received line 32 from 0: 91 floats
+Received line 33 from 0: 91 floats
+Received line 34 from 0: 91 floats
+Received line 35 from 0: 91 floats
+Received line 36 from 0: 91 floats
+Received line 37 from 0: 91 floats
+Received line 38 from 0: 91 floats
+Received line 39 from 0: 91 floats
+Received line 40 from 0: 91 floats
+Received line 41 from 0: 91 floats
+Received line 42 from 0: 91 floats
+Received line 43 from 0: 91 floats
+Received line 44 from 0: 91 floats
+Received line 45 from 0: 91 floats
+Cores: 1
+Initial frame:
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 400 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+Neighbors: 0 -1 -1 -1 
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[1] Checkpoint 1
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[1] Checkpoint 2
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[1] Checkpoint 3
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[1] Checkpoint 4
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 0 border data to 0
+Deferred Receive 0 border data from 0
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[1] Checkpoint 5
+Ending Frame:
+9.72709 14.5409 17.0049 18.1912 18.7055 18.9037 18.9716 18.9924 18.9981 18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0004 19.002 19.0087 19.0337 19.118 19.368 20.0097 21.4039 23.8815 27.2931 30.5447 31.9277 30.5447 27.2931 23.8815 21.4039 20.0097 19.368 19.118 19.0337 19.0087 19.002 19.0004 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 18.9981 18.9924 18.9716 18.9037 18.7055 18.1912 17.0049 14.5409 9.72709 
+14.0067 16.0273 17.5362 18.3768 18.7667 18.9224 18.9769 18.9938 18.9985 18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0004 19.0018 19.0078 19.0302 19.1057 19.3292 19.9025 21.147 23.3568 26.3973 29.2937 30.5252 29.2937 26.3973 23.3568 21.147 19.9025 19.3292 19.1057 19.0302 19.0078 19.0018 19.0004 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 18.9985 18.9938 18.9769 18.9224 18.7667 18.3768 17.5362 16.0273 14.0067 
+16.2558 17.2552 18.0919 18.5983 18.8457 18.9477 18.9842 18.9957 18.9989 18.9997 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0003 19.0013 19.0056 19.0217 19.0759 19.2365 19.6484 20.5423 22.1296 24.3137 26.3942 27.2787 26.3942 24.3137 22.1296 20.5423 19.6484 19.2365 19.0759 19.0217 19.0056 19.0013 19.0003 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9997 18.9989 18.9957 18.9842 18.9477 18.8457 18.5983 18.0919 17.2552 16.2558 
+17.4969 18.0405 18.4909 18.7705 18.9104 18.9693 18.9906 18.9974 18.9993 18.9998 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0008 19.0033 19.0128 19.0446 19.1391 19.3815 19.9078 20.8429 22.1301 23.3566 23.8781 23.3566 22.1301 20.8429 19.9078 19.3815 19.1391 19.0446 19.0128 19.0033 19.0008 19.0002 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9998 18.9993 18.9974 18.9906 18.9693 18.9104 18.7705 18.4909 18.0405 17.4969 
+18.1881 18.4938 18.7328 18.8792 18.9527 18.9837 18.995 18.9986 18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0004 19.0016 19.0063 19.0219 19.0684 19.1877 19.4471 19.9082 20.5433 21.1488 21.4064 21.1488 20.5433 19.9082 19.4471 19.1877 19.0684 19.0219 19.0063 19.0016 19.0004 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 18.9986 18.995 18.9837 18.9527 18.8792 18.7328 18.4938 18.1881 
+18.5689 18.7407 18.8657 18.94 18.9766 18.9919 18.9975 18.9993 18.9998 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0007 19.0026 19.0092 19.0287 19.0788 19.1878 19.3818 19.6493 19.9045 20.013 19.9045 19.6493 19.3818 19.1878 19.0788 19.0287 19.0092 19.0026 19.0007 19.0002 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9998 18.9993 18.9975 18.9919 18.9766 18.94 18.8657 18.7407 18.5689 
+18.7751 18.87 18.9345 18.9712 18.9889 18.9962 18.9988 18.9997 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0003 19.001 19.0033 19.0104 19.0287 19.0684 19.1393 19.237 19.3304 19.3701 19.3304 19.237 19.1393 19.0684 19.0287 19.0104 19.0033 19.001 19.0003 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9997 18.9988 18.9962 18.9889 18.9712 18.9345 18.87 18.7751 
+18.8845 18.9359 18.9687 18.9866 18.9949 18.9983 18.9995 18.9998 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0003 19.0011 19.0033 19.0092 19.022 19.0447 19.0762 19.1062 19.119 19.1062 19.0762 19.0447 19.022 19.0092 19.0033 19.0011 19.0003 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9998 18.9995 18.9983 18.9949 18.9866 18.9687 18.9359 18.8845 
+18.9416 18.9688 18.9852 18.9938 18.9977 18.9992 18.9998 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0003 19.001 19.0026 19.0063 19.0128 19.0218 19.0304 19.0341 19.0304 19.0218 19.0128 19.0063 19.0026 19.001 19.0003 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9998 18.9992 18.9977 18.9938 18.9852 18.9688 18.9416 
+18.9708 18.985 18.9931 18.9972 18.999 18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0003 19.0007 19.0016 19.0033 19.0056 19.0079 19.0088 19.0079 19.0056 19.0033 19.0016 19.0007 19.0003 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 18.999 18.9972 18.9931 18.985 18.9708 
+18.9856 18.9928 18.9968 18.9987 18.9995 18.9998 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0002 19.0004 19.0008 19.0013 19.0018 19.0021 19.0018 19.0013 19.0008 19.0004 19.0002 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9998 18.9995 18.9987 18.9968 18.9928 18.9856 
+18.9929 18.9966 18.9985 18.9994 18.9998 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0002 19.0003 19.0004 19.0005 19.0004 19.0003 19.0002 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9998 18.9994 18.9985 18.9966 18.9929 
+18.9966 18.9984 18.9993 18.9997 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0001 19.0001 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9997 18.9993 18.9984 18.9966 
+18.9983 18.9992 18.9997 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9997 18.9992 18.9983 
+18.9992 18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 18.9992 
+18.9996 18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 18.9996 
+18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 
+18.9999 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18.9999 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 

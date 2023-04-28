@@ -1,4 +1,4 @@
-// mpic++ -fno-exceptions -fopenmp -fsanitize=address -fsanitize=leak -o d.out omp_mpi_simul.cc -g
+// mpic++ -fno-exceptions -fsanitize=address -fsanitize=leak -fopenmp -o d.out omp_mpi_simul.cc -g
 
 #include <stdio.h>
 #include <cmath>
@@ -212,7 +212,7 @@ int main(int argc, char** argv)
 		{
 			for (size_t x=0; x<full_nx; ++x)
 			{
-				tmp[y * full_nx + x] = (x == (full_nx / 2) && y == (full_ny / 2)) ? 100.0f : 19.0f;
+				tmp[y * full_nx + x] = (x == (full_nx / 2) && y == (full_ny / 2)) ? 400.0f : 19.0f;
 			}
 		}
 	
@@ -256,8 +256,8 @@ int main(int argc, char** argv)
 	}
 	
 	// Receive initial frame from master node
-	nx += (((rank+1) % sqrt_n_nodes_x == 0))  ? rem_nx : 0;
-	ny += ((rank+1 - (sqrt_n_nodes_y-1) * sqrt_n_nodes_x) >= 0) ? rem_ny : 0;
+	nx += (((rank+1) % sqrt_n_nodes_x == 0)) ? rem_nx : 0;
+	ny += (rank >= (sqrt_n_nodes_y-1)*sqrt_n_nodes_x) ? rem_ny : 0;
 
 	recv_buffer = std::make_unique<float[]>(nx * ny * (CHECKPOINT+1));
 
@@ -269,7 +269,7 @@ int main(int argc, char** argv)
 		return err;
 	}
 
-	errstream << "nx : " << nx << "ny : " << ny << std::endl;
+	errstream << "nx : " << nx << " ny : " << ny << std::endl;
 	
 	
 	for (size_t y=0; y<ny; ++y)
@@ -315,7 +315,7 @@ int main(int argc, char** argv)
 
 	if (rank >= sqrt_n_nodes_x)
 	{ 
-		neighbors[NORTH] = (rank - sqrt_n_nodes_x - 1);
+		neighbors[NORTH] = (rank - sqrt_n_nodes_x);
 		remote_data[NORTH] = std::make_unique<float[]>(nx);
 		memcpy(remote_data[NORTH].get(), recv_buffer.get(), sizeof(float) * nx);
 	}
@@ -347,7 +347,7 @@ int main(int argc, char** argv)
 		neighbors[SOUTH] = (rank + sqrt_n_nodes_x);
 		remote_data[SOUTH] = std::make_unique<float[]>(nx);
 
-		memcpy(remote_data[NORTH].get(), recv_buffer.get() + (ny-1) * nx, sizeof(float) * nx);
+		memcpy(remote_data[SOUTH].get(), recv_buffer.get() + (ny-1) * nx, sizeof(float) * nx);
 	}
 	else
 	{
@@ -375,7 +375,6 @@ int main(int argc, char** argv)
 	float *new_points = points + ny * nx;
 
 	// print initial points
-	
 	errstream << "Initial frame:" << std::endl;
 	print_points(errstream, points);
 	errstream.flush();
@@ -386,6 +385,14 @@ int main(int argc, char** argv)
 	
 	// timestep variable
 	size_t t;
+
+	// Debug: print my neighbors
+	errstream << "Neighbors: ";
+	for (size_t i=0; i<4; ++i)
+	{
+		errstream << neighbors[i] << " ";
+	}
+	errstream << std::endl;
 
 	
 	for (t=1; t<MAX_ITERS; ++t)
@@ -404,6 +411,7 @@ int main(int argc, char** argv)
 		{
 			if (neighbors[n] != -1)
 			{
+				errstream << "Sending " << n << " border data to " << neighbors[n] << std::endl;
 				err = MPI_Send(remote_data[n].get(), (n % 2) ? ny : nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
 
 				if (err)
@@ -416,6 +424,7 @@ int main(int argc, char** argv)
 					return err;
 				}
 
+				errstream << "Deferred Receive " << n << " border data from " << neighbors[n] << std::endl;
 				err = MPI_Irecv(remote_data[n].get(), (n % 2) ? ny : nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD, &(requests[n]));
 
 				if (err)
@@ -453,10 +462,10 @@ int main(int argc, char** argv)
 				
 			new_points[y*nx + x] = points[y*nx + x] + dt * alpha * (
 			
-				(stencil[WEST] - fmul2(points[y*nx + x]) + stencil[EAST])
+				(stencil[WEST] - 2.0*(points[y*nx + x]) + stencil[EAST])
 						* (1.0f/dx_squared)
 				+
-				(stencil[NORTH] - fmul2(points[y*nx + x]) + stencil[SOUTH])
+				(stencil[NORTH] - 2.0*(points[y*nx + x]) + stencil[SOUTH])
 						* (1.0f/dy_squared)
 			);
 		
@@ -478,7 +487,9 @@ int main(int argc, char** argv)
 
 			if (neighbors[n] != -1)
 			{
+				errstream << "MPI_Wait on border data..." << std::endl;
 				MPI_Wait(&(requests[n]), MPI_STATUS_IGNORE);
+				errstream << "MPI_Wait unlocked!" << std::endl;
 
 				for (size_t i=1; i<((n % 2) ? (ny-1) : (nx-1)); ++i)
 				{
@@ -525,17 +536,17 @@ int main(int argc, char** argv)
 
 					new_points[k] = points[k] + dt * alpha * (
 			
-					(stencil[WEST] - fmul2(points[k]) + stencil[EAST])
+					(stencil[WEST] - 2.0*(points[k]) + stencil[EAST])
 							* (1.0f/dx_squared)
 					+
-					(stencil[NORTH] - fmul2(points[k]) + stencil[SOUTH])
+					(stencil[NORTH] - 2.0*(points[k]) + stencil[SOUTH])
 							* (1.0f/dy_squared)
 					);
 				}
 			}
 			else
 			{
-				for (size_t i=1; i<((n % 2) ? (nx-1) : (ny-1)); ++i)
+				for (size_t i=1; i<((n % 2) ? (ny-1) : (nx-1)); ++i)
 				{
 					
 					size_t k;
@@ -546,7 +557,6 @@ int main(int argc, char** argv)
 						stencil[SOUTH] = points[nx + i];
 						stencil[WEST] = points[i-1];
 						stencil[EAST] = points[i+1];
-						stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
 						k = i;
 						break;
 
@@ -554,7 +564,6 @@ int main(int argc, char** argv)
 						stencil[NORTH] = points[(ny-2)*nx + i];
 						stencil[WEST] = points[(ny-1)*nx + i - 1];
 						stencil[EAST] = points[(ny-1)*nx + i + 1];
-						stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
 						k = (ny-1)*nx + i;
 						break;
 
@@ -562,7 +571,6 @@ int main(int argc, char** argv)
 						stencil[NORTH] = points[(i-1)*nx];
 						stencil[SOUTH] = points[(i+1)*nx];
 						stencil[EAST] = points[i*nx + 1];
-						stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
 						k = i*nx;
 						break;
 					
@@ -570,7 +578,6 @@ int main(int argc, char** argv)
 						stencil[NORTH] = points[(i-1)*nx + nx-1];
 						stencil[SOUTH] = points[(i+1)*nx + nx-1];
 						stencil[WEST] = points[i*nx + (nx-2)];
-						stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
 						k = i*nx + nx-1;
 						break;
 
@@ -578,19 +585,12 @@ int main(int argc, char** argv)
 						break;
 					}
 
-					new_points[k] = points[k] + dt * alpha * (
-			
-					(stencil[WEST] - fmul2(points[k]) + stencil[EAST])
-							* (1.0f/dx_squared)
-					+
-					(stencil[NORTH] - fmul2(points[k]) + stencil[SOUTH])
-							* (1.0f/dy_squared)
-					);
+					new_points[k] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f) / 3.0f;
 				}
 			}
 		}
 
-		// Corners
+		// Compute corners
 
 		// TOP LEFT
 		{
@@ -603,24 +603,30 @@ int main(int argc, char** argv)
 
 			if (neighbors[NORTH] == -1)
 			{
-					stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[WEST] != -1) ? 3.0f : 2.0f);
+				if (neighbors[WEST] == -1)
+				{
+						new_points[0] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+							/ 2.0f;
+				}
+				else
+				{
+				
+				new_points[0] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ 3.0f;
+				}
+				
 			}
-
-			if (neighbors[WEST] == -1)
+			else
 			{
-					stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[NORTH] != -1) ? 3.0f : 2.0f);
+				new_points[0] = points[0] + dt * alpha * (
+
+					(stencil[WEST] - 2.0*(points[0]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - 2.0*(points[0]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
 			}
-
-			new_points[0] = points[0] + dt * alpha * (
-
-				(stencil[WEST] - fmul2(points[0]) + stencil[EAST])
-						* (1.0f/dx_squared)
-				+
-				(stencil[NORTH] - fmul2(points[0]) + stencil[SOUTH])
-						* (1.0f/dy_squared)
-				);
 		}
 
 		// TOP RIGHT
@@ -634,24 +640,30 @@ int main(int argc, char** argv)
 
 			if (neighbors[NORTH] == -1)
 			{
-					stencil[NORTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[EAST] != -1) ? 3.0f : 2.0f);
+				if (neighbors[EAST] == -1)
+				{
+						new_points[nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+							/ 2.0f;
+				}
+				else
+				{
+				
+					new_points[nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ 3.0f;
+				}
+				
 			}
-
-			if (neighbors[EAST] == -1)
+			else
 			{
-					stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[NORTH] != -1) ? 3.0f : 2.0f);
+				new_points[nx-1] = points[nx-1] + dt * alpha * (
+
+					(stencil[WEST] - 2.0*(points[nx-1]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - 2.0*(points[nx-1]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
 			}
-
-			new_points[nx-1] = points[nx-1] + dt * alpha * (
-
-				(stencil[WEST] - fmul2(points[nx-1]) + stencil[EAST])
-						* (1.0f/dx_squared)
-				+
-				(stencil[NORTH] - fmul2(points[nx-1]) + stencil[SOUTH])
-						* (1.0f/dy_squared)
-				);
 		}
 
 		// BOTTOM LEFT
@@ -665,24 +677,30 @@ int main(int argc, char** argv)
 
 			if (neighbors[SOUTH] == -1)
 			{
-					stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[WEST] != -1) ? 3.0f : 2.0f);
+				if (neighbors[WEST] == -1)
+				{
+						new_points[(ny-1)*nx] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+							/ 2.0f;
+				}
+				else
+				{
+				
+				new_points[(ny-1)*nx] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ 3.0f;
+				}
+				
 			}
-
-			if (neighbors[WEST] == -1)
+			else
 			{
-					stencil[WEST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[SOUTH] != -1) ? 3.0f : 2.0f);
+				new_points[(ny-1)*nx] = points[(ny-1)*nx] + dt * alpha * (
+
+					(stencil[WEST] - 2.0*(points[(ny-1)*nx]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - 2.0*(points[(ny-1)*nx]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
 			}
-
-			new_points[(ny-1)*nx] = points[(ny-1)*nx] + dt * alpha * (
-
-				(stencil[WEST] - fmul2(points[(ny-1)*nx]) + stencil[EAST])
-						* (1.0f/dx_squared)
-				+
-				(stencil[NORTH] - fmul2(points[(ny-1)*nx]) + stencil[SOUTH])
-						* (1.0f/dy_squared)
-				);
 		}
 
 		// BOTTOM RIGHT
@@ -696,24 +714,30 @@ int main(int argc, char** argv)
 
 			if (neighbors[SOUTH] == -1)
 			{
-					stencil[SOUTH] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[EAST] != -1) ? 3.0f : 2.0f);
+				if (neighbors[EAST] == -1)
+				{
+						new_points[(ny-1)*nx+nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+							/ 2.0f;
+				}
+				else
+				{
+				
+				new_points[(ny-1)*nx+nx-1] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
+						/ 3.0f;
+				}
+				
 			}
-
-			if (neighbors[EAST] == -1)
+			else
 			{
-					stencil[EAST] = std::accumulate(std::begin(stencil), std::end(stencil), 0.0f)
-						/ ((neighbors[SOUTH] != -1) ? 3.0f : 2.0f);
+				new_points[(ny-1)*nx+nx-1] = points[(ny-1)*nx+nx-1] + dt * alpha * (
+
+					(stencil[WEST] - 2.0*(points[(ny-1)*nx+nx-1]) + stencil[EAST])
+							* (1.0f/dx_squared)
+					+
+					(stencil[NORTH] - 2.0*(points[(ny-1)*nx+nx-1]) + stencil[SOUTH])
+							* (1.0f/dy_squared)
+					);
 			}
-
-			new_points[(ny-1)*nx + nx - 1] = points[(ny-1)*nx + nx - 1] + dt * alpha * (
-
-				(stencil[WEST] - fmul2(points[(ny-1)*nx + nx - 1]) + stencil[EAST])
-						* (1.0f/dx_squared)
-				+
-				(stencil[NORTH] - fmul2(points[(ny-1)*nx + nx - 1]) + stencil[SOUTH])
-						* (1.0f/dy_squared)
-				);
 		}
 
 		// Copy freshly calculatated bordering points into send buffers
@@ -752,6 +776,7 @@ int main(int argc, char** argv)
 		}
 
 		// Synchronization point
+		errstream << "***BARRIER***" << std::endl;
 		MPI_Barrier(MPI_COMM_WORLD);
 	}
 	
@@ -786,7 +811,7 @@ int main(int argc, char** argv)
 			for (size_t j=0; j<sqrt_n_nodes_x; ++j)
 			{
 				starting_ptr = buffer.get() + i*full_nx + j*nx;
-				from = (i/ny) * sqrt_n_nodes_x + j;
+				from = (((i/ny) < sqrt_n_nodes_y) ? (i/ny) : (i/ny)-1) * sqrt_n_nodes_x + j;
 				count = nx + ((j == sqrt_n_nodes_x-1) ? rem_nx : 0);
 				
 				err = MPI_Recv(starting_ptr, count, MPI_FLOAT, from, FRAME_END, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
