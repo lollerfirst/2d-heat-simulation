@@ -1,0 +1,4819 @@
+sqrt_n_nodes_x : 2	sqrt_n_nodes_y : 2
+Sending line 0, chunk 0 to 0: 45 floats
+Sending line 0, chunk 1 to 1: 46 floats
+Sending line 1, chunk 0 to 0: 45 floats
+Sending line 1, chunk 1 to 1: 46 floats
+Sending line 2, chunk 0 to 0: 45 floats
+Sending line 2, chunk 1 to 1: 46 floats
+Sending line 3, chunk 0 to 0: 45 floats
+Sending line 3, chunk 1 to 1: 46 floats
+Sending line 4, chunk 0 to 0: 45 floats
+Sending line 4, chunk 1 to 1: 46 floats
+Sending line 5, chunk 0 to 0: 45 floats
+Sending line 5, chunk 1 to 1: 46 floats
+Sending line 6, chunk 0 to 0: 45 floats
+Sending line 6, chunk 1 to 1: 46 floats
+Sending line 7, chunk 0 to 0: 45 floats
+Sending line 7, chunk 1 to 1: 46 floats
+Sending line 8, chunk 0 to 0: 45 floats
+Sending line 8, chunk 1 to 1: 46 floats
+Sending line 9, chunk 0 to 0: 45 floats
+Sending line 9, chunk 1 to 1: 46 floats
+Sending line 10, chunk 0 to 0: 45 floats
+Sending line 10, chunk 1 to 1: 46 floats
+Sending line 11, chunk 0 to 0: 45 floats
+Sending line 11, chunk 1 to 1: 46 floats
+Sending line 12, chunk 0 to 0: 45 floats
+Sending line 12, chunk 1 to 1: 46 floats
+Sending line 13, chunk 0 to 0: 45 floats
+Sending line 13, chunk 1 to 1: 46 floats
+Sending line 14, chunk 0 to 0: 45 floats
+Sending line 14, chunk 1 to 1: 46 floats
+Sending line 15, chunk 0 to 0: 45 floats
+Sending line 15, chunk 1 to 1: 46 floats
+Sending line 16, chunk 0 to 0: 45 floats
+Sending line 16, chunk 1 to 1: 46 floats
+Sending line 17, chunk 0 to 0: 45 floats
+Sending line 17, chunk 1 to 1: 46 floats
+Sending line 18, chunk 0 to 0: 45 floats
+Sending line 18, chunk 1 to 1: 46 floats
+Sending line 19, chunk 0 to 0: 45 floats
+Sending line 19, chunk 1 to 1: 46 floats
+Sending line 20, chunk 0 to 0: 45 floats
+Sending line 20, chunk 1 to 1: 46 floats
+Sending line 21, chunk 0 to 0: 45 floats
+Sending line 21, chunk 1 to 1: 46 floats
+Sending line 22, chunk 0 to 0: 45 floats
+Sending line 22, chunk 1 to 1: 46 floats
+Sending line 23, chunk 0 to 0: 45 floats
+Sending line 23, chunk 1 to 1: 46 floats
+Sending line 24, chunk 0 to 0: 45 floats
+Sending line 24, chunk 1 to 1: 46 floats
+Sending line 25, chunk 0 to 0: 45 floats
+Sending line 25, chunk 1 to 1: 46 floats
+Sending line 26, chunk 0 to 0: 45 floats
+Sending line 26, chunk 1 to 1: 46 floats
+Sending line 27, chunk 0 to 0: 45 floats
+Sending line 27, chunk 1 to 1: 46 floats
+Sending line 28, chunk 0 to 0: 45 floats
+Sending line 28, chunk 1 to 1: 46 floats
+Sending line 29, chunk 0 to 0: 45 floats
+Sending line 29, chunk 1 to 1: 46 floats
+Sending line 30, chunk 0 to 0: 45 floats
+Sending line 30, chunk 1 to 1: 46 floats
+Sending line 31, chunk 0 to 0: 45 floats
+Sending line 31, chunk 1 to 1: 46 floats
+Sending line 32, chunk 0 to 0: 45 floats
+Sending line 32, chunk 1 to 1: 46 floats
+Sending line 33, chunk 0 to 0: 45 floats
+Sending line 33, chunk 1 to 1: 46 floats
+Sending line 34, chunk 0 to 0: 45 floats
+Sending line 34, chunk 1 to 1: 46 floats
+Sending line 35, chunk 0 to 0: 45 floats
+Sending line 35, chunk 1 to 1: 46 floats
+Sending line 36, chunk 0 to 0: 45 floats
+Sending line 36, chunk 1 to 1: 46 floats
+Sending line 37, chunk 0 to 0: 45 floats
+Sending line 37, chunk 1 to 1: 46 floats
+Sending line 38, chunk 0 to 0: 45 floats
+Sending line 38, chunk 1 to 1: 46 floats
+Sending line 39, chunk 0 to 0: 45 floats
+Sending line 39, chunk 1 to 1: 46 floats
+Sending line 40, chunk 0 to 0: 45 floats
+Sending line 40, chunk 1 to 1: 46 floats
+Sending line 41, chunk 0 to 0: 45 floats
+Sending line 41, chunk 1 to 1: 46 floats
+Sending line 42, chunk 0 to 0: 45 floats
+Sending line 42, chunk 1 to 1: 46 floats
+Sending line 43, chunk 0 to 0: 45 floats
+Sending line 43, chunk 1 to 1: 46 floats
+Sending line 44, chunk 0 to 0: 45 floats
+Sending line 44, chunk 1 to 1: 46 floats
+Sending line 45, chunk 0 to 2: 45 floats
+Sending line 45, chunk 1 to 3: 46 floats
+Sending line 46, chunk 0 to 2: 45 floats
+Sending line 46, chunk 1 to 3: 46 floats
+Sending line 47, chunk 0 to 2: 45 floats
+Sending line 47, chunk 1 to 3: 46 floats
+Sending line 48, chunk 0 to 2: 45 floats
+Sending line 48, chunk 1 to 3: 46 floats
+Sending line 49, chunk 0 to 2: 45 floats
+Sending line 49, chunk 1 to 3: 46 floats
+Sending line 50, chunk 0 to 2: 45 floats
+Sending line 50, chunk 1 to 3: 46 floats
+Sending line 51, chunk 0 to 2: 45 floats
+Sending line 51, chunk 1 to 3: 46 floats
+Sending line 52, chunk 0 to 2: 45 floats
+Sending line 52, chunk 1 to 3: 46 floats
+Sending line 53, chunk 0 to 2: 45 floats
+Sending line 53, chunk 1 to 3: 46 floats
+Sending line 54, chunk 0 to 2: 45 floats
+Sending line 54, chunk 1 to 3: 46 floats
+Sending line 55, chunk 0 to 2: 45 floats
+Sending line 55, chunk 1 to 3: 46 floats
+Sending line 56, chunk 0 to 2: 45 floats
+Sending line 56, chunk 1 to 3: 46 floats
+Sending line 57, chunk 0 to 2: 45 floats
+Sending line 57, chunk 1 to 3: 46 floats
+Sending line 58, chunk 0 to 2: 45 floats
+Sending line 58, chunk 1 to 3: 46 floats
+Sending line 59, chunk 0 to 2: 45 floats
+Sending line 59, chunk 1 to 3: 46 floats
+Sending line 60, chunk 0 to 2: 45 floats
+Sending line 60, chunk 1 to 3: 46 floats
+Sending line 61, chunk 0 to 2: 45 floats
+Sending line 61, chunk 1 to 3: 46 floats
+Sending line 62, chunk 0 to 2: 45 floats
+Sending line 62, chunk 1 to 3: 46 floats
+Sending line 63, chunk 0 to 2: 45 floats
+Sending line 63, chunk 1 to 3: 46 floats
+Sending line 64, chunk 0 to 2: 45 floats
+Sending line 64, chunk 1 to 3: 46 floats
+Sending line 65, chunk 0 to 2: 45 floats
+Sending line 65, chunk 1 to 3: 46 floats
+Sending line 66, chunk 0 to 2: 45 floats
+Sending line 66, chunk 1 to 3: 46 floats
+Sending line 67, chunk 0 to 2: 45 floats
+Sending line 67, chunk 1 to 3: 46 floats
+Sending line 68, chunk 0 to 2: 45 floats
+Sending line 68, chunk 1 to 3: 46 floats
+Sending line 69, chunk 0 to 2: 45 floats
+Sending line 69, chunk 1 to 3: 46 floats
+Sending line 70, chunk 0 to 2: 45 floats
+Sending line 70, chunk 1 to 3: 46 floats
+Sending line 71, chunk 0 to 2: 45 floats
+Sending line 71, chunk 1 to 3: 46 floats
+Sending line 72, chunk 0 to 2: 45 floats
+Sending line 72, chunk 1 to 3: 46 floats
+Sending line 73, chunk 0 to 2: 45 floats
+Sending line 73, chunk 1 to 3: 46 floats
+Sending line 74, chunk 0 to 2: 45 floats
+Sending line 74, chunk 1 to 3: 46 floats
+Sending line 75, chunk 0 to 2: 45 floats
+Sending line 75, chunk 1 to 3: 46 floats
+Sending line 76, chunk 0 to 2: 45 floats
+Sending line 76, chunk 1 to 3: 46 floats
+Sending line 77, chunk 0 to 2: 45 floats
+Sending line 77, chunk 1 to 3: 46 floats
+Sending line 78, chunk 0 to 2: 45 floats
+Sending line 78, chunk 1 to 3: 46 floats
+Sending line 79, chunk 0 to 2: 45 floats
+Sending line 79, chunk 1 to 3: 46 floats
+Sending line 80, chunk 0 to 2: 45 floats
+Sending line 80, chunk 1 to 3: 46 floats
+Sending line 81, chunk 0 to 2: 45 floats
+Sending line 81, chunk 1 to 3: 46 floats
+Sending line 82, chunk 0 to 2: 45 floats
+Sending line 82, chunk 1 to 3: 46 floats
+Sending line 83, chunk 0 to 2: 45 floats
+Sending line 83, chunk 1 to 3: 46 floats
+Sending line 84, chunk 0 to 2: 45 floats
+Sending line 84, chunk 1 to 3: 46 floats
+Sending line 85, chunk 0 to 2: 45 floats
+Sending line 85, chunk 1 to 3: 46 floats
+Sending line 86, chunk 0 to 2: 45 floats
+Sending line 86, chunk 1 to 3: 46 floats
+Sending line 87, chunk 0 to 2: 45 floats
+Sending line 87, chunk 1 to 3: 46 floats
+Sending line 88, chunk 0 to 2: 45 floats
+Sending line 88, chunk 1 to 3: 46 floats
+Sending line 89, chunk 0 to 2: 45 floats
+Sending line 89, chunk 1 to 3: 46 floats
+Sending line 90, chunk 0 to 2: 45 floats
+Sending line 90, chunk 1 to 3: 46 floats
+nx : 45 ny : 45
+Received line 0 from 0: 45 floats
+Received line 1 from 0: 45 floats
+Received line 2 from 0: 45 floats
+Received line 3 from 0: 45 floats
+Received line 4 from 0: 45 floats
+Received line 5 from 0: 45 floats
+Received line 6 from 0: 45 floats
+Received line 7 from 0: 45 floats
+Received line 8 from 0: 45 floats
+Received line 9 from 0: 45 floats
+Received line 10 from 0: 45 floats
+Received line 11 from 0: 45 floats
+Received line 12 from 0: 45 floats
+Received line 13 from 0: 45 floats
+Received line 14 from 0: 45 floats
+Received line 15 from 0: 45 floats
+Received line 16 from 0: 45 floats
+Received line 17 from 0: 45 floats
+Received line 18 from 0: 45 floats
+Received line 19 from 0: 45 floats
+Received line 20 from 0: 45 floats
+Received line 21 from 0: 45 floats
+Received line 22 from 0: 45 floats
+Received line 23 from 0: 45 floats
+Received line 24 from 0: 45 floats
+Received line 25 from 0: 45 floats
+Received line 26 from 0: 45 floats
+Received line 27 from 0: 45 floats
+Received line 28 from 0: 45 floats
+Received line 29 from 0: 45 floats
+Received line 30 from 0: 45 floats
+Received line 31 from 0: 45 floats
+Received line 32 from 0: 45 floats
+Received line 33 from 0: 45 floats
+Received line 34 from 0: 45 floats
+Received line 35 from 0: 45 floats
+Received line 36 from 0: 45 floats
+Received line 37 from 0: 45 floats
+Received line 38 from 0: 45 floats
+Received line 39 from 0: 45 floats
+Received line 40 from 0: 45 floats
+Received line 41 from 0: 45 floats
+Received line 42 from 0: 45 floats
+Received line 43 from 0: 45 floats
+Received line 44 from 0: 45 floats
+Cores: 4
+Initial frame:
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+Neighbors: -1 -1 2 1 
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[0] Checkpoint 1
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[0] Checkpoint 2
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[0] Checkpoint 3
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[0] Checkpoint 4
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+Sending 2 border data to 2
+Deferred Receive 2 border data from 2
+Sending 3 border data to 1
+Deferred Receive 3 border data from 1
+MPI_Wait on border data...
+MPI_Wait unlocked!
+MPI_Wait on border data...
+MPI_Wait unlocked!
+***BARRIER***
+[0] Checkpoint 5
+Ending Frame:
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0002 19.0002 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0002 19.0005 19.0008 19.001 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0004 19.0011 19.0023 19.004 19.0049 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0006 19.0018 19.0047 19.0101 19.0174 19.0217 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0007 19.0023 19.0071 19.0185 19.0399 19.0686 19.0867 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0006 19.0023 19.0081 19.0248 19.0645 19.1395 19.2411 19.3099 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0004 19.0018 19.0071 19.0248 19.0755 19.1968 19.4267 19.7439 19.9794 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0011 19.0047 19.0185 19.0645 19.1968 19.514 20.1223 20.983 21.6935 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0001 19.0005 19.0023 19.0101 19.0399 19.1395 19.4267 20.1223 21.4799 23.4711 25.3127 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.0008 19.004 19.0174 19.0686 19.2411 19.7439 20.983 23.4711 27.2953 31.247 
+19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19.0002 19.001 19.0049 19.0217 19.0867 19.3099 19.9794 21.6935 25.3127 31.247 38.0348 

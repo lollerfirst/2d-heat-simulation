@@ -1,4 +1,4 @@
-// mpic++ -fno-exceptions -fsanitize=address -fopenmp -o d.out omp_mpi_simul.cc -g
+// mpic++ -O3 -fno-rtti -fno-exceptions -fopenmp -o d.out omp_mpi_simul.cc
 
 #include <stdio.h>
 #include <cmath>
@@ -301,7 +301,8 @@ int main(int argc, char** argv)
 	{ 
 		neighbors[NORTH] = (rank - sqrt_n_nodes_x);
 		remote_data[NORTH] = std::make_unique<float[]>(nx);
-		memcpy(remote_data[NORTH].get(), recv_buffer.get(), sizeof(float) * nx);
+
+		//memcpy(remote_data[NORTH].get(), recv_buffer.get(), sizeof(float) * nx);
 	}
 	else
 	{
@@ -315,10 +316,12 @@ int main(int argc, char** argv)
 		neighbors[WEST] = (rank - 1);
 		remote_data[WEST] = std::make_unique<float[]>(ny);
 		
+		/*
 		for (size_t i=0; i<ny; ++i)
 		{
 			remote_data[WEST][i] = recv_buffer[i*nx];
 		}
+		*/
 	}
 	else
 	{
@@ -331,7 +334,7 @@ int main(int argc, char** argv)
 		neighbors[SOUTH] = (rank + sqrt_n_nodes_x);
 		remote_data[SOUTH] = std::make_unique<float[]>(nx);
 
-		memcpy(remote_data[SOUTH].get(), recv_buffer.get() + (ny-1) * nx, sizeof(float) * nx);
+		//memcpy(remote_data[SOUTH].get(), recv_buffer.get() + (ny-1) * nx, sizeof(float) * nx);
 	}
 	else
 	{
@@ -344,10 +347,12 @@ int main(int argc, char** argv)
 		neighbors[EAST] = (rank + 1);
 		remote_data[EAST] = std::make_unique<float[]>(ny);
 
+		/*
 		for (size_t i=0; i<ny; ++i)
 		{
 			remote_data[EAST][i] = recv_buffer[i*nx + (nx-1)];
 		}
+		*/
 	}
 	else
 	{
@@ -363,6 +368,10 @@ int main(int argc, char** argv)
 	print_points(errstream, points);
 	errstream.flush();
 
+	// Strided mpi vector for column exchange
+	MPI_Datatype MPI_Strided_vector;
+	MPI_Type_vector(ny, 1, nx, MPI_FLOAT, &MPI_Strided_vector);
+	MPI_Type_commit(&MPI_Strided_vector);
 
 	// checkpoint counter
 	size_t c = 0;
@@ -396,7 +405,28 @@ int main(int argc, char** argv)
 			if (neighbors[n] != -1)
 			{
 				errstream << "Sending " << n << " border data to " << neighbors[n] << std::endl;
-				err = MPI_Send(remote_data[n].get(), (n % 2) ? ny : nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+
+				switch (n)
+				{
+					case NORTH:
+					err = MPI_Send(recv_buffer.get(), nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+					break;
+
+					case WEST:
+					err = MPI_Send(recv_buffer.get(), 1, MPI_Strided_vector, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+					break;
+
+					case SOUTH:
+					err = MPI_Send(recv_buffer.get()+((ny-1)*nx), nx, MPI_FLOAT, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+					break;
+
+					case EAST:
+					err = MPI_Send(recv_buffer.get()+(nx-1), 1, MPI_Strided_vector, neighbors[n], REMOTE_VALUE, MPI_COMM_WORLD);
+					break;
+
+					default:
+					break;
+				}
 
 				if (err)
 				{
@@ -463,7 +493,18 @@ int main(int argc, char** argv)
 			return -1;
 		}
 		
-		// Wait for data and deal with boundaries, excluding corners
+		// Wait for border data
+		for (int n=0; n<4; ++n)
+		{
+			if (neighbors[n] != -1)
+			{
+				errstream << "MPI_Wait on border data..." << std::endl;
+				MPI_Wait(&(requests[n]), MPI_STATUS_IGNORE);
+				errstream << "MPI_Wait unlocked!" << std::endl;
+			}
+		}
+
+		// Deal with boundaries, excluding corners
 		#pragma omp parallel for
 		for (int n=0; n<4; ++n)
 		{
@@ -471,9 +512,6 @@ int main(int argc, char** argv)
 
 			if (neighbors[n] != -1)
 			{
-				errstream << "MPI_Wait on border data..." << std::endl;
-				MPI_Wait(&(requests[n]), MPI_STATUS_IGNORE);
-				errstream << "MPI_Wait unlocked!" << std::endl;
 
 				for (size_t i=1; i<((n % 2) ? (ny-1) : (nx-1)); ++i)
 				{
@@ -728,41 +766,6 @@ int main(int argc, char** argv)
 			}
 		}
 
-		// Copy freshly calculatated bordering points into send buffers
-		// Recopy data to send buffer
-
-		#pragma omp parallel for
-		for (int n=0; n<4; ++n)
-		{
-			if (neighbors[n] != -1)
-			{
-				switch (n)
-				{
-				case NORTH:
-					memcpy(remote_data[NORTH].get(), new_points, sizeof(float) * nx);
-					break;
-
-				case SOUTH:
-					memcpy(remote_data[SOUTH].get(), new_points + (ny-1)*nx, sizeof(float) * nx);
-					break;
-				
-				case WEST:
-					for (size_t i=0; i<ny; ++i)
-					{
-						remote_data[WEST][i] = new_points[i*nx];
-					}
-					break;
-
-				case EAST:
-					for (size_t i=0; i<ny; ++i)
-					{
-						remote_data[EAST][i] = new_points[i*nx + nx-1];
-					}
-					break;
-				}
-			}
-		}
-
 		// Synchronization point
 		errstream << "***BARRIER***" << std::endl;
 		MPI_Barrier(MPI_COMM_WORLD);
@@ -821,7 +824,6 @@ int main(int argc, char** argv)
 	errstream << "Ending Frame:" << std::endl;
 	print_points(errstream, points);
 	errstream.flush();
-	
 	
 	MPI_Finalize();
 	return 0;
